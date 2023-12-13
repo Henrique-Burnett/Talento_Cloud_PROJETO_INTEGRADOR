@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beleza Plena</title>
+</head>
+<body>
+    <header>
+        <span><img src="src/logo black.jpg" alt="logo Beleza Plena"></span>
+        <nav>
+            <ul>
+                <li>Página Inicial</li>
+                <li>Sobre nós</li>
+                <li>Serviços</li>
+                <li>Localização</li>
+                <!-- Input para o search -->
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Título da página (aparece na aba) -->
+        <title>Agendamento</title>
+    </head>
+
+    <body>  
+
+        <!-- Cabeçalho com título -->
+        <div>
+            <h1 id="titulo">Agendamento</h1>
+            <p id="subtitulo">Complete suas informações</p>
+            <br>
+        </div>
+
+        <!-- Início do formulário -->
+        <form>
+
+            <fieldset class="grupo">
+                <!-- Campo do nome com legenda "nome" -->
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <!-- Campo do sobrenome com legenda "sobrenome" -->
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset> 
+
+            <!-- Campo de telefone com-->
+            <div class="campo">
+                <label for="telefone"><strong>Telefone para Contato</strong></label>
+                <input type="telefone" name="telefone" id="telefone" required>
+            </div>
+
+                <!-- Campo de turno agendado com 3 opções para escolha (select option) -->
+            <div class="campo">
+                <label for="turno"><strong>Turno Agendado</strong></label>
+                <select id="turno" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Manhã</option>
+                  <option>Tarde</option>
+                  <option>Noite</option>
+                </select>
+            </div>
+
+            <!-- Campo de horários -->
+            <div class="campo">
+                <label><strong>Qual horário deseja agendar?</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>10hrs às 11hrs
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>11hrs às 12hrs
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>12hrs às 13hrs
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>13hrs às 14hrs
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>14hrs às 15hrs
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>15hrs às 16hrs
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>16hrs às 17hrs
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>17hrs às 18hrs
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>18hrs às 19hrs
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>19hrs às 20hrs
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>20hrs às 21hrs
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>21hrs às 22hrs
+                </label>
+
+
+            <fieldset class="grupo">
+                <!-- Campo de escolha do Profissional -->
+                <div id="check">
+                    <label><strong>Selecione com quem deseja ser Atendido:</strong></label><br><br>
+                    <input type="checkbox" id="Profissional1" name="Profissional1" value="Germano Gladston">
+                    <label for="Profissional1"> Germano Gladston</label>
+                    <input type="checkbox" id="Profissional2" name="Profissional2" value="Halyson">
+                    <label for="Profissional2"> Halyson</label>
+                    <input type="checkbox" id="Profissional3" name="Profissional3" value="Henrique Burnett">
+                    <label for="Profissional3"> Henrique Burnett</label>
+                    <input type="checkbox" id="Profissional4" name="Profissional4" value="Keila Nascimento">
+                    <label for="Profissional4"> Keila Nascimento</label>
+                    <input type="checkbox" id="Profissional5" name="Profissional5" value="Pedro Alcantara">
+                    <label for="Profissional5"> Pedro Alcantara</label>
+                    
+                </div>
+            </fieldset>
+
+
+            <!-- Botão para enviar o formulário -->
+            <button class="botao" type="submit" onsubmit="">Concluído</button>            
+
+        </form>
+
+    </main>
+
+    <footer>
+        <span> <img width="250" src="src/logo white.jpg" alt="logo Beleza rodapé"> </span>
+    </footer>
+</body>
+</html>
