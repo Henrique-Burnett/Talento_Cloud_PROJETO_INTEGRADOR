@@ -1,1 +1,0 @@
-# Talento_Cloud_PROJETO_INTEGRADOR
