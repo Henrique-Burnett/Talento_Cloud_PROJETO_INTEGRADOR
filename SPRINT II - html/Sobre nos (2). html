@@ -3,100 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beleza Plena</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: space-around;
-            background-color: #444;
-        }
-
-        nav ul li {
-            padding: 1em;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        nav ul li:hover {
-            background-color: #555;
-        }
-
-        main {
-            max-width: 800px;
-            margin: 2em auto;
-            padding: 2em;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 1em;
-        }
-
-        p {
-            line-height: 1.6;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>Beleza Plena - Quem Somos</title>
+    <link rel="stylesheet" href="caminho/para/o/seu/estilo.css">
 </head>
 <body>
 
     <header>
-        <span><img src="src/logo black.jpg" alt="logo Beleza Plena"></span>
-        <nav>
-            <ul>
-                <li>Página inicial</li>
-                <li>Serviços</li>
-                <li>Agendar</li>
-                <li>Localização</li>
-                <!-- Input para o search -->
-            </ul>
-        </nav>
+        <img src="src/logo-black.jpg" alt="Logo Beleza Plena" style="max-width: 200px;">
     </header>
+
+    <nav>
+        <ul>
+            <li>Página Inicial</li>
+            <li>Serviços</li>
+            <li>Agendar</li>
+            <li>Localização</li>
+        </ul>
+    </nav>
     
     <main>
-        <h1>Quem somos</h1>
-        <img src="./src/aboutus.jpg" alt="imagem do salão Beleza Plena">
-        <p>Um espaço sofisticado e aconchegante pra você relaxar e receber todos os cuidados que merece! Localizado em Bela Vista, aqui tem tudo que você precisa para cuidar de você em um só lugar.</p>
+        <h1>Descubra a Beleza Plena</h1>
+        <img src="./src/about-us.jpg" alt="Imagem do salão Beleza Plena">
+        <p>
+            Seja bem-vindo ao Beleza Plena, seu refúgio de bem-estar e beleza. Aqui, cada detalhe é cuidadosamente projetado para proporcionar uma experiência única e relaxante.
+        </p>
+        <p>
+            Nosso compromisso é elevar a sua autoestima, oferecendo serviços de alta qualidade e um ambiente acolhedor. No Beleza Plena, você não apenas recebe tratamentos excepcionais, mas também se reconecta consigo mesmo.
+        </p>
+        <p>
+            <span class="highlight">Somos mais do que um salão de beleza; somos um destino de rejuvenescimento e transformação.</span> Nossa equipe apaixonada e qualificada está pronta para superar suas expectativas e realçar sua beleza natural.
+        </p>
     </main>
 
     <footer>
-        <span> <img width="250" src="src/logo white.jpg" alt="logo Beleza rodapé"> </span>
+        <img src="src/logo-white.jpg" alt="Logo Beleza Plena" style="max-width: 150px;">
     </footer>
 
 </body>
