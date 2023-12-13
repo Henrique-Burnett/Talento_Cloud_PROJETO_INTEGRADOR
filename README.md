@@ -3,7 +3,7 @@
 ## Sprint I - Layout de Telas
 
 - [x] Home/Página inicial - Pedro
-- [x] Sobre nós - Henrique
+- [x] Sobre nós - Halyson
 - [x] Serviços - Keila
 - [x] Agendamento - Germano
 - [x] Localização - Henrique 
