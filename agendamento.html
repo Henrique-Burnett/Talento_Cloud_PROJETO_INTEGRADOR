@@ -7,14 +7,17 @@
 </head>
 <body>
     <header>
-        <span><img src="src/logo black.jpg" alt="logo Beleza Plena"></span>
+        <span><img src="img/logo black.jpg" alt="logo Beleza Plena"></span>
         <nav>
-            <ul>
-                <li> <a href="index.html">Página Inicial</a></li>
-                <li> <a href="sobre_nos.html">Sobre nós</a></li>
+            <ul id="navegacao">
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="sobre_nos.html">Sobre nós</a></li>
                 <li><a href="servicos.html">Serviços</a></li>
                 <li><a href="localizacao.html">Localização</a></li>
-                <!-- Input para o search -->
+                <form action="">
+                    <label for="search">Busca: </label>
+                    <input type="text" name="search" id="search" placeholder="O que você procura?">
+                </form>
             </ul>
         </nav>
     </header>
