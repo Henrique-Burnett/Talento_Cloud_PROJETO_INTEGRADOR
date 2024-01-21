@@ -91,6 +91,18 @@
             color: #f3b655; /* Amarelo */
             font-weight: bold;
         }
+
+        /* Media Queries para tornar o site responsivo */
+        @media only screen and (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin-bottom: 0.5em;
+            }
+        }
     </style>
 </head>
 <body>
