@@ -22,7 +22,7 @@ https://henrique-burnett.github.io/Talento_Cloud_PROJETO_INTEGRADOR/
 ## Sprint III - CSS
 
 - [ ] Home/Página inicial
-- [ ] Sobre nós - 
+- [x] Sobre nós - 
 - [ ] Serviços - 
 - [ ] Agendamento - 
 - [ ] Localização -  
