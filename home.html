@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salão Beleza Plena</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <header class="background-logo"><!-------Início da header------>
+
+        <img src="./img/LOGO MELHORADO PNG.png" class="logo" alt="logo" />
+
+        <div class="container"><!---Início da div container-->
+         
+    <div id="menu"><!--Início do menu-->
+        <ul id="navegacao">
+            <li><a href="">Home</a></li>
+            <li><a href="">Sobre nós</a></li>
+            <li><a href="">Serviços</a></li>
+            <li><a href="">Contato</a></li>
+            <li><a href="">Localização</a></li>
+        </ul>
+    </div><!--Fim do menu-->
+    
+    <div id="area-menu"><!-------Início da área-menu------->
+
+        <div id="conteudo-menu"><!--Início do conteudo-menu-->
+
+            <div id="menu-locais"><!--Início do menu-locais-->
+
+                
+                <span class="locais">
+                    Rio de Janeiro - São Paulo - Belo Horizonte
+                </span>
+
+            </div> <!----------Fim do menu-locais--------->
+           
+
+        </div>
+    </div><!-----------------------Fim da área menu----------------------->
+
+
+    </header><!-------Fim da header------>
+    
+    <section><!--------Inicio da section----------->
+     <h2>Profissionais</h2>
+     <main id="profissionais"><!--------Inicio da div prosissionais----->
+        <div class="elemento">
+            <img src="img/profissional_1.jpg" alt="imagem 1">
+            <span class="prof">Keilla</span>
+        </div>
+        <div class="elemento">
+            <img src="img/profissional_2.jpg" alt="imagem 2">
+            <span class="prof">Pedro</span>
+        </div>
+        <div class="elemento">
+            <img src="img/profissional_3.jpg" alt="imagem 3">
+            <span class="prof">Henrique</span>
+        </div>
+        <div class="elemento">
+            <img src="img/profissional_4.4.1.jpg" alt="imagem 4">
+            <span class="prof">Germano</span>
+        </div>
+        <div class="elemento">
+            <img src="img/profissional_5.jpg" alt="imagem 5">
+            <span class="prof">Halyson</span>
+        </div>
+    </main><!--------Fim da main profissionais------->
+</section><!------------Fim da section------------->
+
+  
+
+   
+    <div class="content"> <!-----------------Início da div content------------------------>
+        <div class="slides">
+            <input class="input" type="radio" name="slide" id="slide1" checked>
+            <input class="input" type="radio" name="slide" id="slide2">
+            <input class="input" type="radio" name="slide" id="slide3">
+            <input class="input" type="radio" name="slide" id="slide4">
+            <input class="input" type="radio" name="slide" id="slide5">
+
+            <div class="slide s1">
+                <img src="img/img_1.jpg" alt="imagem 1">
+            </div>
+            <div class="slide">
+                <img src="img/img_2.jpg" alt="imagem 2">
+            </div>
+            <div class="slide">
+                <img src="img/img_3.jpg" alt="imagem 3">
+            </div>
+            <div class="slide">
+                <img src="img/img_4.jpg" alt="imagem 4">
+            </div>
+            <div class="slide">
+                <img src="img/img_5.jpg" alt="imagem 5">
+            </div>
+        </div>
+
+    </div><!-----------Fim da div content--------->
+
+<!----Início da div navigation---->
+    <div class="navigation">
+        <label class="bar" for="slide1"></label>
+        <label class="bar" for="slide2"></label>
+        <label class="bar" for="slide3"></label>
+        <label class="bar" for="slide4"></label>
+        <label class="bar" for="slide5"></label>
+
+    </div><!----Fim da div navigation---->
+
+
+<!-------Inicio do Formulário de agendaamento--------->
+<button onclick="toggleForm()">Agendamento</button><!--<button class="">Agendamento</button>-->
+
+<form id="appointmentForm" class="hidden">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="date">Data do Agendamento:</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="time">Horário do Agendamento:</label>
+    <input type="time" id="time" name="time" required>
+
+    <button class="btn-agendar" type="submit">Agendar</button>
+</form>
+<!-------Fim do Formulário de agendaamento--------->
+
+
+
+<script src="script.js"></script>
+</body>
+
+<!--------Início da div content-whatshapp-------->
+<div class="content-whatsapp">
+    <a href="https://api.whatsapp.com/send?phone=5571991000422&text=Ol%C3%A1%20tudo%20bem?" id="figura-whatsapp"><img src="img/zap2.png" id="figura-whatsapp" alt="btn-whatsapp"></a>
+
+</div>
+<!---------Fim da div content-whatshapp------>
+
+<footer>
+   
+    
+<p class="footer">&copy; 2023-2024 Salão Beleza Plena. Todos os direitos reservados.</p>
+</footer>
+
+<img class="logo-radape" src="/img/LOGO MELHORADO PNG.png" alt="Logo Beleza Plena">
+
+</div><!---------Fim do container------->
+
+</body>
+
+</html>
