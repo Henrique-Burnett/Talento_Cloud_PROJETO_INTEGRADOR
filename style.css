@@ -123,13 +123,15 @@ a{
     /* letter-spacing: 0.2em; Espaço entre letras */
 }
   
-/*.container{
+.container{
     background-color: #000000;
     margin: 0 auto;
     max-width: 1496px;
     width: 100%;
+    height: 100%;
     padding: 0 38px;
-}*/
+
+}
   
 p{
     position: absolute;
@@ -150,13 +152,42 @@ h2{
     font-size: 50px;
     font-family: "Lobster";
 }
+
+section,
+h2 {
+  color: white;
+  /Cor da fonte/
+  font-size: 70px;
+  top: 65%;
+  left: 50%;
+}
+
+
+#servicos {
+  display: flex;
+  /* a partir daqui podemos manipular todos os elementos filhos  */
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  /* Ele faz com que as divs quebre para a próxima linha, as divs (img) ao adicionar mais, em vez de diminuir as mesmas. */
+}
+
+#servicos {
+  /POSIÇÃO DAS DIVS/
+  position: absolute;
+  top: 105%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
   
 
 
 
 
 
-.card {
+.servicos .card {
     border-radius: 16px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor: pointer;
@@ -171,17 +202,16 @@ h2{
     transition: all .5s;
 }
 
-.card:hover {
+.servicos .card:hover {
     background-image: linear-gradient(#672abf, #380e74);
 }
 
-.card .img {
+.servicos .card .img {
     width: 360px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 200px;
-    background-image: url('./assets/Evelynn.jpg');
     background-size: cover;
     background-position: center;
     transition: all .5s;
@@ -190,7 +220,7 @@ h2{
     opacity: .8;
 }
 
-.card .img span {
+.servicos .card .img span {
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 100;
@@ -198,16 +228,16 @@ h2{
     transition: all .5s;
 }
 
-.card:hover .img {
+.servicos .card:hover .img {
     width: 430px;
     opacity: 1;
 }
 
-.card:hover .img span {
+.servicos .card:hover .img span {
     font-size: 28px;
 }
 
-.card .content {
+.servicos .card .content {
     padding: 0px 20px;
     height: 0;
     opacity: 0;
@@ -218,40 +248,40 @@ h2{
     transform: translateY(30px);
 }
 
-.card:hover .content {
+.servicos .card:hover .content {
     height: 260px;
     padding: 20px;
     opacity: 1;
     transform: translateY(0);
 }
 
-.card .content p {
+.servicos .card .content p {
     margin: 0;
 }
 
-.card .content .title {
+.servicos .card .content .title {
     font-size: 20px;
     font-weight: 600;
 }
 
-.card .content .desc {
+.servicos .card .content .desc {
     font-size: 14px;
     font-weight: 100;
     opacity: .8;
     margin-top: 8px;
 }
 
-.card .arrow {
+.servicos .card .arrow {
     padding: 15px;
     transform: rotate(-180deg);
     transition: all .5s;
 }
 
-.card:hover .arrow {
+.servicos .card:hover .arrow {
     transform: rotate(0);
 }
 
-.card .arrow span {
+.servicos .card .arrow span {
     font-size: 24px;
 }
 
