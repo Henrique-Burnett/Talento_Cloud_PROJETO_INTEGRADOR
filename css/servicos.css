@@ -27,7 +27,7 @@ header{
     width: 218vh;
     height: 40%;
    /* background-color: black;*/
-    background-image: url(img/22-22.png);
+    background-image: url(/img/22-22.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -123,15 +123,13 @@ a{
     /* letter-spacing: 0.2em; Espaço entre letras */
 }
   
-.container{
+/*.container{
     background-color: #000000;
     margin: 0 auto;
     max-width: 1496px;
     width: 100%;
-    height: 100%;
     padding: 0 38px;
-
-}
+}*/
   
 p{
     position: absolute;
@@ -152,43 +150,20 @@ h2{
     font-size: 50px;
     font-family: "Lobster";
 }
-
-section,
-h2 {
-  color: white;
-  /Cor da fonte/
-  font-size: 70px;
-  top: 65%;
-  left: 50%;
-}
+  
 
 
-#servicos {
-  display: flex;
-  /* a partir daqui podemos manipular todos os elementos filhos  */
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  /* Ele faz com que as divs quebre para a próxima linha, as divs (img) ao adicionar mais, em vez de diminuir as mesmas. */
-}
 
-#servicos {
-  /POSIÇÃO DAS DIVS/
-  position: absolute;
-  top: 105%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
-.servicos .card {
+
+.card {
     border-radius: 16px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor: pointer;
     width: 360px;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     position: relative;
     overflow: hidden;
@@ -196,16 +171,17 @@ h2 {
     transition: all .5s;
 }
 
-.servicos .card:hover {
+.card:hover {
     background-image: linear-gradient(#672abf, #380e74);
 }
 
-.servicos .card .img {
+.card .img {
     width: 360px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 200px;
+    background-image: url('./assets/Evelynn.jpg');
     background-size: cover;
     background-position: center;
     transition: all .5s;
@@ -214,7 +190,7 @@ h2 {
     opacity: .8;
 }
 
-.servicos .card .img span {
+.card .img span {
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 100;
@@ -222,16 +198,16 @@ h2 {
     transition: all .5s;
 }
 
-.servicos .card:hover .img {
+.card:hover .img {
     width: 430px;
     opacity: 1;
 }
 
-.servicos .card:hover .img span {
+.card:hover .img span {
     font-size: 28px;
 }
 
-.servicos .card .content {
+.card .content {
     padding: 0px 20px;
     height: 0;
     opacity: 0;
@@ -242,40 +218,40 @@ h2 {
     transform: translateY(30px);
 }
 
-.servicos .card:hover .content {
+.card:hover .content {
     height: 260px;
     padding: 20px;
     opacity: 1;
     transform: translateY(0);
 }
 
-.servicos .card .content p {
+.card .content p {
     margin: 0;
 }
 
-.servicos .card .content .title {
+.card .content .title {
     font-size: 20px;
     font-weight: 600;
 }
 
-.servicos .card .content .desc {
+.card .content .desc {
     font-size: 14px;
     font-weight: 100;
     opacity: .8;
     margin-top: 8px;
 }
 
-.servicos .card .arrow {
+.card .arrow {
     padding: 15px;
     transform: rotate(-180deg);
     transition: all .5s;
 }
 
-.servicos .card:hover .arrow {
+.card:hover .arrow {
     transform: rotate(0);
 }
 
-.servicos .card .arrow span {
+.card .arrow span {
     font-size: 24px;
 }
 
@@ -313,7 +289,8 @@ label {
     margin-bottom: 8px;
 }
 
-input,select {
+input,
+select {
     width: 100%;
     padding: 8px;
     margin-bottom: 16px;
@@ -323,7 +300,7 @@ input,select {
 }
 
 button {
-  
+  /Fonte botão agendamento/
     background-color: #000000;
     color: #f3b655;
     padding: 10px 15px;
@@ -390,3 +367,11 @@ button:hover {
     left: 50%;
     transform: translate(-50%);
 }
+/* Paagina de serviços*/
+servicos h3{
+    text-align: center;
+}
+
+
+@media(max-width:830px)
+/* Fim Pagina de serviços*/
