@@ -7,20 +7,25 @@
 text-align: center;
 color: white;
 font-size: 10rem;
-margin-bottom: 10rem;
+margin-bottom: 5rem;
   }
 
 h2{
   text-align: center;
   font-size: 5rem;
+  margin-bottom: 2%;
+  margin-top: 7%;
 }
 
 h3, p{
+  padding-left: 6%;
   text-align: left;
   font-size: 2.5rem;
 }
 
 iframe{
+  border-color: black;
+  padding-left: 5%;
   margin-top: 1rem;
   width: 100%;
   height: 30vh
