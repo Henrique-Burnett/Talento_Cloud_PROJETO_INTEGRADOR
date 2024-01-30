@@ -289,8 +289,7 @@ label {
     margin-bottom: 8px;
 }
 
-input,
-select {
+input,select {
     width: 100%;
     padding: 8px;
     margin-bottom: 16px;
@@ -300,7 +299,7 @@ select {
 }
 
 button {
-  /Fonte botão agendamento/
+  
     background-color: #000000;
     color: #f3b655;
     padding: 10px 15px;
@@ -367,11 +366,3 @@ button:hover {
     left: 50%;
     transform: translate(-50%);
 }
-/* Paagina de serviços*/
-servicos h3{
-    text-align: center;
-}
-
-
-@media(max-width:830px)
-/* Fim Pagina de serviços*/
