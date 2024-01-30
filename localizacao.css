@@ -3,34 +3,49 @@
     padding: 0;
     }
   
-body {
-    /* display: flexbox; */
+  h1{
+text-align: center;
+color: white;
+font-size: 10rem;
+margin-bottom: 10rem;
+  }
+
+h2{
+  text-align: center;
+  font-size: 5rem;
+}
+
+h3, p{
+  text-align: left;
+  font-size: 2.5rem;
+}
+
+iframe{
+  margin-top: 1rem;
+  width: 100%;
+  height: 30vh
+}
+ 
+  /*Padrão lima*/
+
+  section{
+    color: white; /*Cor da fonte*/
+  }
+
+  body {
+    color: white;
     box-sizing: border-box;
-    /* height: 100vh; /*vh- altura viewport (janela de exibição)*/
-    /* width: 100vh; */
+    height: 100vh; 
+    width: 100vh;
     background-color: #000000;
     background-image: url(img/6.webp);
     background-repeat: repeat;
     overflow: auto;
-   
-    /*background-position: center ;
-    background-size: cover; /*Ele vai cobrir a tela inteira, mesmo que pra isso ele corte um pouco aslaterais da tela. Ele se adpita de acordo com o tamanho da janela da viewport. Ele não exibi 100% da imagem mas ocupa 100% da viewport. */
-  /*background-size: contain; /*Ele da ordem para mostrar 100% exibida, ou seja, a imagem não pode ter corte nenhum  */
-    /*background-size: 100% 100%;/*Aqui mexemos com o tamanho da imagem. Ao colocar 100% duas vezes, estou mudando as duas dimenssões (largura e altura).*/
-    
-    /* background: linear-gradient(72deg, #e0dac1 25%, #eedba2, #e6dc8f 99%); */
-    /* background-attachment: fixed; */
-   
-  
-  
   }
-  
-  #menu-locais { /* Franquias (Saão Paulo-Rio de Janeiro-Belo Horizonte */
-    /*--Menu locais--*/
+
+  #menu-locais { 
     border-bottom: 2px solid #f3b655;
-    /*Aplicando borda somente em baixo, sem aplicar nas laterais*/
     border-top: 2px solid #f3b655;
-    /*Aplicando borda somente em cima, sem aplicar nas laterais*/
     padding-top: 5px;
     padding-bottom: 10px;
     font-size: 1.2em;
@@ -38,8 +53,7 @@ body {
     position: absolute;
     top: 7%;
     right: 5.5%;
-  
-  }
+    }
   .locais{
     color: #f3b655;
   }
@@ -48,13 +62,11 @@ body {
     top: 200%;
     right: 11%;
     text-transform: uppercase;
-  
-  }
+    }
   
   a {
     text-decoration: none;
     /* letter-spacing: 0.2em; Espaço entre letras */
-   
   }
   
   #menu {
@@ -62,8 +74,7 @@ body {
     position: absolute;
     top: 30%;
     right: 1%;
-    
-  }
+     }
   
   ul#navegacao a {
     text-transform: uppercase;
@@ -83,16 +94,6 @@ body {
     line-height: 10px;/* Altura da linha*/
     white-space: nowrap; /* Quebra de linha no texto*/
    
-  }
-  
-
-  
-  p {
-    position: absolute;
-    top: 95%;
-    left: 50%;
-    font-size: 30px;
-    transform: translate(-50%, -50%);
   }
   
   header{
@@ -120,25 +121,7 @@ body {
   
   }
   
-  h2 {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Lobster';
   
-  
-  }
-  section, h2{
-    color: white; /*Cor da fonte*/
-    font-size: 70px;
-    top: 65%;
-    left: 50%;
-  }
   
   /*DIV PROFISSIONAIS*/
   #profissionais {
