@@ -6,13 +6,14 @@
   h1{
 text-align: center;
 color: white;
-font-size: 10rem;
+font-size: 5rem;
 margin-bottom: 5rem;
+border-color: goldenrod;
   }
 
 h2{
   text-align: center;
-  font-size: 5rem;
+  font-size: 1.5rem;
   margin-bottom: 2%;
   margin-top: 7%;
 }
@@ -20,7 +21,7 @@ h2{
 h3, p{
   padding-left: 6%;
   text-align: left;
-  font-size: 2.5rem;
+  font-size: 0.8rem;
 }
 
 iframe{
@@ -43,7 +44,7 @@ iframe{
     height: 100vh; 
     width: 100vh;
     background-color: #000000;
-    background-image: url(img/6.webp);
+    background-image: url(/img/6.webp);
     background-repeat: repeat;
     overflow: auto;
   }
@@ -108,7 +109,7 @@ iframe{
     width: 218vh;
     height: 40%;
     background-color: black;
-    background-image: url(img/luxury\ 2.jpg);
+    background-image: url(/img/luxury\ 2.jpg);
     background-repeat: repeat;
     background-size: 100vh;
     background-position: center;
