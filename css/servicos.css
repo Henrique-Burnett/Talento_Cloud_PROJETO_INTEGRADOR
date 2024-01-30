@@ -3,8 +3,9 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-   
-   
+    outline: none;
+    border: none;
+    box-sizing: border-box;
    
 }
 
@@ -14,6 +15,7 @@ body{
     box-sizing: border-box;
     height: 100vh;
     width: 100vh;
+    background-color: #ab905e;
     background-repeat: repeat;
     overflow: auto;
   
@@ -24,10 +26,10 @@ header{
     border: 4px solid #ab905e;
     width: 218vh;
     height: 40%;
-    background-color: rgb(5, 4, 4);
+   /* background-color: black;*/
     background-image: url(img/22-22.png);
-    background-repeat: repeat;
-    background-size: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
     background-position: center;
 }
   
@@ -55,7 +57,19 @@ header{
 }
   
   
-
+.agendamento{
+    position: absolute;
+    top: 200%;
+    right: 11%;
+    text-transform: uppercase;
+}
+  
+.btn-agendamento{
+    background: none;
+    position: absolute;
+    top: 5%;
+    left: 8%;
+}
 
 #menu {
     position: absolute;
@@ -108,101 +122,167 @@ a{
     text-decoration: none;
     /* letter-spacing: 0.2em; Espaço entre letras */
 }
-<<<<<<< HEAD:style.css
-.container {
-=======
   
-/*.container{
->>>>>>> 95ab0f2df586d9098fc464e43e1b1000ae566fb0:css/servicos.css
+.container{
     background-color: #000000;
     margin: 0 auto;
-    width: 100vh;
+    max-width: 1496px;
+    width: 100%;
+    height: 100%;
     padding: 0 38px;
-<<<<<<< HEAD:style.css
-  }  
 
-=======
-}*/
+}
   
->>>>>>> 95ab0f2df586d9098fc464e43e1b1000ae566fb0:css/servicos.css
 p{
     position: absolute;
     top: 95%;
     left: 50%;
     font-size: 30px;
     transform: translate(-50%, -50%);
-} 
+}
+  
 h2{
     position: absolute;
-    top: 45%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     font-family: "Lobster";
 }
 
-.main{
-    display: flex;
-    align-items: center;
-}
-.cards{
-    width: 20%;
-    display: inline-block;
-    box-shadow: 2px 2px 20px #b9b7b3;
-    border-radius: 5px; 
-    margin: 2%;
-}
-   
-.imagem img{
-    width: 100%;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-     
-   
-    
-}
-   
-.titulo{
-    
-    text-align: center;
-    padding: 10px;
-     
-}
-   
-h1{
-    font-size: 20px;
-}
-   
-.descricao{
-    padding: 3px;
-    text-align: center;
-    padding-top: 10px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+section,
+h2 {
+  color: white;
+  /Cor da fonte/
+  font-size: 70px;
+  top: 65%;
+  left: 50%;
 }
 
-button{
-    margin-top: 40px;
-    margin-bottom: 10px;
-    background-color: rgb(165, 145, 145);
-    border: 1px solid black;
-    border-radius: 11px;
-    padding:10px;
+
+#servicos {
+  display: flex;
+  /* a partir daqui podemos manipular todos os elementos filhos  */
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  /* Ele faz com que as divs quebre para a próxima linha, as divs (img) ao adicionar mais, em vez de diminuir as mesmas. */
 }
-button:hover{
-    background-color: black;
-    color: rgb(202, 136, 49);
-    transition: .5s;
+
+#servicos {
+  /POSIÇÃO DAS DIVS/
+  position: absolute;
+  top: 105%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.servicos .card {
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor: pointer;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(#333, #333);
+    transition: all .5s;
+}
+
+.servicos .card:hover {
+    background-image: linear-gradient(#672abf, #380e74);
+}
+
+.servicos .card .img {
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+.servicos .card .img span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+}
+
+.servicos .card:hover .img {
+    width: 430px;
+    opacity: 1;
+}
+
+.servicos .card:hover .img span {
+    font-size: 28px;
+}
+
+.servicos .card .content {
+    padding: 0px 20px;
+    height: 0;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translateY(30px);
+}
+
+.servicos .card:hover .content {
+    height: 260px;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.servicos .card .content p {
+    margin: 0;
+}
+
+.servicos .card .content .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.servicos .card .content .desc {
+    font-size: 14px;
+    font-weight: 100;
+    opacity: .8;
+    margin-top: 8px;
+}
+
+.servicos .card .arrow {
+    padding: 15px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.servicos .card:hover .arrow {
+    transform: rotate(0);
+}
+
+.servicos .card .arrow span {
+    font-size: 24px;
 }
 
 
 
-
-.btn-whatsapp{
+.btn-whatsapp,
+#figura-whatsapp {
     width: 220px;
 }
 
@@ -211,10 +291,88 @@ button:hover{
     right: 8px;
     bottom: 20px;
     width: 190px;
+}
+
+
+form {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 300px;
+    margin: 20px;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+  
+    background-color: #000000;
+    color: #f3b655;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    left: 20px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    border: 2px solid;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn-agendamento{
+    background: none;
+}
 
 
 
+.btn-agendar {
+    position: absolute;
+    margin-top: 225px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 110px;
+    height: auto;
+    text-transform: none;
+}
 
+.agendar {
+    background-color: #f3ecec;
+    color: #e2cc07;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 10%;
+    left: 20px;
+}
 
 .footer {
     text-align: center;
