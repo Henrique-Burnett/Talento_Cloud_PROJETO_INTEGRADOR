@@ -14,8 +14,11 @@ body{
     padding: 0;
     box-sizing: border-box;
     height: 100vh;
+    /*vh- altura viewport (janela de exibição)*/
     width: 100vh;
-    background-color: #ab905e;
+    background-color: #000000;
+    /*É importante uma cor de fundo, pois o conteúdo (texto, por exemplo.) é carregado primeiro, depois as imagens, então o ideal é não mostrar o site com o fundo branco e depois a imagem de fundo, para que o usuário possa ir consumindo o conteúdo.*/
+    background-image: url(/img/6.webp);
     background-repeat: repeat;
     overflow: auto;
   
@@ -24,10 +27,10 @@ body{
 header{
     
     border: 4px solid #ab905e;
-    width: 218vh;
+    width: 216vh;
     height: 40%;
-   /* background-color: black;*/
-    background-image: url(img/22-22.png);
+    background-color: black;
+    background-image: url(/img/22-22.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -164,7 +167,6 @@ h2 {
 
 
 #servicos {
-  display: flex;
   /* a partir daqui podemos manipular todos os elementos filhos  */
   justify-content: center;
   align-items: center;
@@ -175,6 +177,7 @@ h2 {
 
 #servicos {
   /POSIÇÃO DAS DIVS/
+  display: inline-block;
   position: absolute;
   top: 105%;
   left: 50%;
