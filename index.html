@@ -5,28 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salão Beleza Plena</title>
+    <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
 <body>
-    <header>
-        <span><img src="img/logo black.jpg" alt="logo Beleza Plena"></span>
-        <nav>
-            <ul id="navegacao">
-                <li><a href="sobre_nos.html">Sobre nós</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="agendamento.html">Agendamento</a></li>
-                <li><a href="localizacao.html">Localização</a></li>
-                <form action="">
-                    <label for="search">Busca: </label>
-                    <input type="text" name="search" id="search" placeholder="O que você procura?">
-                </form>
-            </ul>
-        </nav>
-    </header>
 
-    <h2>Profissionais</h2>
+    <header class="background-logo"><!-------Início do header------>
 
+<<<<<<< HEAD
     <main id=""></main>
 
     <!--Inicio Fotos do profissionais-->
@@ -49,27 +36,72 @@
         </div>
     </div>
     <!--Fim Fotos do profissionais-->
+=======
+        <img src="./img/LOGO MELHORADO PNG.png" class="logo" alt="logo" />
+
+        <div class="container"><!---Início da div container-->
+
+            <div id="menu"><!--Início do menu-->
+                <ul id="navegacao">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./Sobre nós CSS.html">Sobre nós</a></li>
+                    <li><a href="./servicos.html">Serviços</a></li>
+                    <li><a href="./agendamento.html">Contato</a></li>
+                    <li><a href="./localizacao.html">Localização</a></li>
+                </ul>
+            </div><!--Fim do menu-->
+
+            <div id="area-menu"><!-------Início da área-menu------->
+
+                <div id="conteudo-menu"><!--Início do conteúdo-menu-->
+
+                    <div id="menu-locais"><!--Início do menu-locais-->
+>>>>>>> 95ab0f2df586d9098fc464e43e1b1000ae566fb0
 
 
-    <!--------------------------------Fim do Menu Home-------------------------------------->
+                        <span class="locais">
+                            Rio de Janeiro - São Paulo - Belo Horizonte
+                        </span>
 
-    <!----------------------------------Inicio da area-menu---------------------------------------------------->
-    <div id="area-menu"><!---Início da area-menu-->
-        <div id="conteudo-menu"><!--Início do conteudo-menu-->
-            <div id="menu-locais"><!--Início do menu-locais-->
+                    </div> <!----------Fim do menu-locais--------->
 
 
-                <span class="locais">
-                    Rio de Janeiro - São Paulo - Belo Horizonte
-                </span>
+                </div>
+            </div><!-----------------------Fim da área menu----------------------->
 
-            </div><!--Fim do menu-locais-->
-        </div>
-    </div>
 
-    <!----------------------------------Fim da area menu---------------------------------------------------->
+    </header><!-------Fim da header------>
 
-    <div class="content">
+    <section><!--------Início da section----------->
+        <h2>Profissionais</h2>
+        <main id="profissionais"><!--------Início da div profissionais----->
+            <div class="profissional">
+                <img src="img/profissional_1.jpg" alt="imagem 1">
+                <span class="prof">Keilla</span>
+            </div>
+            <div class="profissional">
+                <img src="img/profissional_2.jpg" alt="imagem 2">
+                <span class="prof">Pedro</span>
+            </div>
+            <div class="profissional">
+                <img src="img/profissional_3.jpg" alt="imagem 3">
+                <span class="prof">Henrique</span>
+            </div>
+            <div class="profissional">
+                <img src="img/profissional_4.4.1.jpg" alt="imagem 4">
+                <span class="prof">Germano</span>
+            </div>
+            <div class="profissional">
+                <img src="img/profissional_5.jpg" alt="imagem 5">
+                <span class="prof">Halyson</span>
+            </div>
+        </main><!--------Fim da main profissionais------->
+    </section><!------------Fim da section------------->
+
+
+
+
+    <div class="nav-slides"> <!-----------------Início da div content------------------------>
         <div class="slides">
             <input class="input" type="radio" name="slide" id="slide1" checked>
             <input class="input" type="radio" name="slide" id="slide2">
@@ -78,24 +110,25 @@
             <input class="input" type="radio" name="slide" id="slide5">
 
             <div class="slide s1">
-                <img src="" alt="imagem 1">
+                <img src="img/img_1.jpg" alt="imagem 1">
             </div>
             <div class="slide">
-                <img src="" alt="imagem 2">
+                <img src="img/img_2.jpg" alt="imagem 2">
             </div>
             <div class="slide">
-                <img src="" alt="imagem 3">
+                <img src="img/img_3.jpg" alt="imagem 3">
             </div>
             <div class="slide">
-                <img src="" alt="imagem 4">
+                <img src="img/img_4.jpg" alt="imagem 4">
             </div>
             <div class="slide">
-                <img src="" alt="imagem 5">
+                <img src="img/img_5.jpg" alt="imagem 5">
             </div>
         </div>
 
-    </div>
+    </div><!-----------Fim da div content--------->
 
+    <!----Início da div navigation---->
     <div class="navigation">
         <label class="bar" for="slide1"></label>
         <label class="bar" for="slide2"></label>
@@ -103,10 +136,12 @@
         <label class="bar" for="slide4"></label>
         <label class="bar" for="slide5"></label>
 
-    </div>
+    </div><!----Fim da div navigation---->
 
-    <!-------Inicio do Formulário de agendamento--------->
-    <button onclick="toggleForm()">Mostrar / Esconder / Formulário</button>
+
+    <!-------Início do Formulário de agendamento--------->
+
+    <button class="btn-agendamento">Agendamento</button>
 
     <form id="appointmentForm" class="hidden">
         <label for="name">Nome:</label>
@@ -123,22 +158,30 @@
 
         <button class="btn-agendar" type="submit">Agendar</button>
     </form>
-
     <!-------Fim do Formulário de agendamento--------->
+
+
 
 </body>
 
-<img class="logo-rodape" src="">
+<!--------Início da div btn-whatshapp-------->
+<div class="btn-whatsapp">
+    <a href="https://api.whatsapp.com/send?phone=5571991000422&text=Ol%C3%A1%20tudo%20bem?" id="figura-whatsapp"><img
+            src="img/zap2.png" id="figura-whatsapp" alt="btn-whatsapp"></a>
 
-<div class="content-whatsapp">
-    <img src="" href="" id="figura-whatsapp">
 </div>
-
+<!---------Fim da div btn-whatshapp------>
 
 <footer>
-    <img width="250" src="./img/logo white.jpg" alt="logo Beleza rodapé">
-    <p>&copy; 2023 Beleza Plena. Todos os direitos reservados.</p>
+
+
+    <p class="footer">&copy; 2023-2024 Salão Beleza Plena. Todos os direitos reservados.</p>
 </footer>
 
+<img class="logo-radape" src="/img/LOGO MELHORADO PNG.png" alt="Logo Beleza Plena">
+
+</div><!---------Fim do container------->
+
+</body>
 
 </html>

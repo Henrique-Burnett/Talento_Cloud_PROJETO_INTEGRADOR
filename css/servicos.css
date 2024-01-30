@@ -108,13 +108,23 @@ a{
     text-decoration: none;
     /* letter-spacing: 0.2em; Espaço entre letras */
 }
+<<<<<<< HEAD:style.css
 .container {
+=======
+  
+/*.container{
+>>>>>>> 95ab0f2df586d9098fc464e43e1b1000ae566fb0:css/servicos.css
     background-color: #000000;
     margin: 0 auto;
     width: 100vh;
     padding: 0 38px;
+<<<<<<< HEAD:style.css
   }  
 
+=======
+}*/
+  
+>>>>>>> 95ab0f2df586d9098fc464e43e1b1000ae566fb0:css/servicos.css
 p{
     position: absolute;
     top: 95%;

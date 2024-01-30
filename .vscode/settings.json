@@ -1,4 +1,7 @@
 {
+<<<<<<< HEAD
     "editor.wordWrap": "on",
+=======
+>>>>>>> 95ab0f2df586d9098fc464e43e1b1000ae566fb0
     "liveServer.settings.port": 5501
 }
