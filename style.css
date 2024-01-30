@@ -3,9 +3,8 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    outline: none;
-    border: none;
-    box-sizing: border-box;
+   
+   
    
 }
 
@@ -15,7 +14,6 @@ body{
     box-sizing: border-box;
     height: 100vh;
     width: 100vh;
-    background-color: #ab905e;
     background-repeat: repeat;
     overflow: auto;
   
@@ -26,10 +24,10 @@ header{
     border: 4px solid #ab905e;
     width: 218vh;
     height: 40%;
-   /* background-color: black;*/
+    background-color: rgb(5, 4, 4);
     background-image: url(img/22-22.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-repeat: repeat;
+    background-size: 100vh;
     background-position: center;
 }
   
@@ -57,19 +55,7 @@ header{
 }
   
   
-.agendamento{
-    position: absolute;
-    top: 200%;
-    right: 11%;
-    text-transform: uppercase;
-}
-  
-.btn-agendamento{
-    background: none;
-    position: absolute;
-    top: 5%;
-    left: 8%;
-}
+
 
 #menu {
     position: absolute;
@@ -122,143 +108,91 @@ a{
     text-decoration: none;
     /* letter-spacing: 0.2em; Espaço entre letras */
 }
-  
-.container{
+.container {
     background-color: #000000;
     margin: 0 auto;
-    max-width: 1496px;
-    width: 100%;
+    width: 100vh;
     padding: 0 38px;
-}
-  
+  }  
+
 p{
     position: absolute;
     top: 95%;
     left: 50%;
     font-size: 30px;
     transform: translate(-50%, -50%);
-}
-  
+} 
 h2{
     position: absolute;
-    top: 60%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     font-family: "Lobster";
 }
-  
 
-
-
-
-
-.card {
-    border-radius: 16px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    cursor: pointer;
-    width: 360px;
+.main{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    background-image: linear-gradient(#333, #333);
-    transition: all .5s;
 }
-
-.card:hover {
-    background-image: linear-gradient(#672abf, #380e74);
+.cards{
+    width: 20%;
+    display: inline-block;
+    box-shadow: 2px 2px 20px #b9b7b3;
+    border-radius: 5px; 
+    margin: 2%;
 }
-
-.card .img {
-    width: 360px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    background-image: url('./assets/Evelynn.jpg');
-    background-size: cover;
-    background-position: center;
-    transition: all .5s;
-    z-index: 2;
-    position: relative;
-    opacity: .8;
+   
+.imagem img{
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+     
+   
+    
 }
-
-.card .img span {
-    text-transform: uppercase;
-    font-size: 24px;
-    font-weight: 100;
-    font-style: italic;
-    transition: all .5s;
+   
+.titulo{
+    
+    text-align: center;
+    padding: 10px;
+     
 }
-
-.card:hover .img {
-    width: 430px;
-    opacity: 1;
-}
-
-.card:hover .img span {
-    font-size: 28px;
-}
-
-.card .content {
-    padding: 0px 20px;
-    height: 0;
-    opacity: 0;
-    transition: all .5s;
-    position: relative;
-    box-sizing: border-box;
-    overflow: hidden;
-    transform: translateY(30px);
-}
-
-.card:hover .content {
-    height: 260px;
-    padding: 20px;
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.card .content p {
-    margin: 0;
-}
-
-.card .content .title {
+   
+h1{
     font-size: 20px;
-    font-weight: 600;
+}
+   
+.descricao{
+    padding: 3px;
+    text-align: center;
+    padding-top: 10px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
-.card .content .desc {
-    font-size: 14px;
-    font-weight: 100;
-    opacity: .8;
-    margin-top: 8px;
+button{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    background-color: rgb(165, 145, 145);
+    border: 1px solid black;
+    border-radius: 11px;
+    padding:10px;
 }
-
-.card .arrow {
-    padding: 15px;
-    transform: rotate(-180deg);
-    transition: all .5s;
-}
-
-.card:hover .arrow {
-    transform: rotate(0);
-}
-
-.card .arrow span {
-    font-size: 24px;
+button:hover{
+    background-color: black;
+    color: rgb(202, 136, 49);
+    transition: .5s;
+    cursor: pointer;
 }
 
 
 
-.btn-whatsapp,
-#figura-whatsapp {
+
+.btn-whatsapp{
     width: 220px;
 }
 
@@ -267,89 +201,10 @@ h2{
     right: 8px;
     bottom: 20px;
     width: 190px;
-}
-
-
-form {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    width: 300px;
-    margin: 20px;
-
-}
-
-label {
-    display: block;
-    margin-bottom: 8px;
-}
-
-input,
-select {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-  /Fonte botão agendamento/
-    background-color: #000000;
-    color: #f3b655;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    position: absolute;
-    top: 30%;
-    left: 20px;
-    text-transform: uppercase;
-}
-
-button:hover {
-    background-color: rgb(0, 0, 0);
-    border-radius: 20px;
-    border: 2px solid;
-}
-
-.hidden {
-    display: none;
-}
-
-.btn-agendamento{
-    background: none;
-}
 
 
 
-.btn-agendar {
-    position: absolute;
-    margin-top: 225px;
-    left: 50%;
-    transform: translate(-50%);
-    width: 110px;
-    height: auto;
-    text-transform: none;
-}
 
-.agendar {
-    background-color: #f3ecec;
-    color: #e2cc07;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    position: absolute;
-    top: 10%;
-    left: 20px;
-}
 
 .footer {
     text-align: center;
@@ -367,11 +222,3 @@ button:hover {
     left: 50%;
     transform: translate(-50%);
 }
-/* Paagina de serviços*/
-servicos h3{
-    text-align: center;
-}
-
-
-@media(max-width:830px)
-/* Fim Pagina de serviços*/
