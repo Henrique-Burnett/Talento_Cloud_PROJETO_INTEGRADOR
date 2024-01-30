@@ -17,7 +17,7 @@ body {
   width: 100vh;
   background-color: #000000;
   /*É importante uma cor de fundo, pois o conteúdo (texto, por exemplo.) é carregado primeiro, depois as imagens, então o ideal é não mostrar o site com o fundo branco e depois a imagem de fundo, para que o usuário possa ir consumindo o conteúdo.*/
-  background-image: url(img/6.webp);
+  background-image: url(/img/6.webp);
   background-repeat: repeat;
   overflow: auto;
 
@@ -30,7 +30,7 @@ header {
   width: 216vh;
   height: 40%;
   background-color: black;
-  background-image: url(img/22-22.png);
+  background-image: url(/img/22-22.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
