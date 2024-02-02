@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -160,7 +159,6 @@ h2{
 section,
 h2 {
   color: white;
-  /Cor da fonte/
   font-size: 70px;
   top: 65%;
   left: 50%;
@@ -327,7 +325,6 @@ button:hover {
     left: 50%;
     transform: translate(-50%);
 }
-=======
 *{
     margin: 0;
     padding: 0;
@@ -627,10 +624,7 @@ select {
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
-}
-
-button {
-  /Fonte botão agendamento/
+}button {
     background-color: #000000;
     color: #f3b655;
     padding: 10px 15px;
@@ -701,8 +695,3 @@ button:hover {
 servicos h3{
     text-align: center;
 }
-
-
-@media(max-width:830px)
-/* Fim Pagina de serviços*/
->>>>>>> c4741ecbcea759a7ef43aca857b887c66e66552c
