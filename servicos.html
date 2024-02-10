@@ -4,96 +4,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serviços Beleza Plena</title>
-    <link rel="stylesheet" href="/css/servicos.css">
+    <link rel="stylesheet" type="text/css" href="css/servicos.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
 </head>
 <body>
-
+    
     <header>
-        <img src="./img/LOGO MELHORADO PNG.png" class="logo" alt="logo" />
-        <span> Rio de Janeiro - São Paulo - Belo Horizonte </span>
+        <a href="#"><img src="img/LOGO MELHORADO PNG.png" alt="Infinity"></a>
+        <nav>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre Nos</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Localização</a></li>
+        </nav>
     </header>
-  
-      <!--Início da navegação-->
-      <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Sobre nós</a></li>
-          <li><a href="">Serviços</a></li>
-          <li><a href="">Contato</a></li>
-          <li><a href="">Localização</a></li>
-        </ul>
-      </nav>
-      <!--Fim da navegação-->
-        
-        
-    <section class="secao4" id="sobre">
-        <div class="secao4-div">
-            <!-- Card 1 -->
-            <div class="secao4-div-card">
-                <img decoding="async" src="img/beautiful-young-woman-with-long-hair-portrait-amazing-girl-with-style-fashion-makeup_186202-7457.jpg" alt="imagem do card 1 html e css">
-                <h3>Beleza Plena</h3>
-                <p>seja qual for o seu estilo, nos do Salão Beleza Plena, estamos aqui para te ajudar nessa transformação.</p>
-            </div>
-    
-            <!-- Card 2 -->
-            <div class="secao4-div-card">
-                <img decoding="async" src="img/fashion-portrait-young-beautiful-woman-with-hairstyle-bob-black-makeup-eye_186202-8441.jpg" alt="imagem do card 2 html e css">
-                <h3>Beleza plena</h3>
-                <p>Descrição do card 2.</p>
-            </div>
-    
-            <!-- Card 3 -->
-            <div class="secao4-div-card">
-                <img decoding="async" src="img/modelo-homem.jpg" alt="imagem do card 3 html e css">
-                <h3>Beleza plena</h3>
-                <p>Descrição do card 3.</p>
-            </div>
-        </div>
+
+    <section class="banner">
     </section>
-    <!-------Início do Formulário de agendamento--------->
 
-    <button class="btn-agendamento">Agendamento</button>
-
-    <form id="appointmentForm" class="hidden">
-        <label for="name">Nome:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="date">Data do Agendamento:</label>
-        <input type="date" id="date" name="date" required>
-
-        <label for="time">Horário do Agendamento:</label>
-        <input type="time" id="time" name="time" required>
-
-        <button class="btn-agendar" type="submit">Agendar</button>
-    </form>
-    <!-------Fim do Formulário de agendamento--------->
-
-        
+    <main>
+        <H1>SERVIÇOS BELEZA PLENA</H1>
+    </main>
     
+    <section>
 
+        <div class="services-container">
+            
+            <div class="service-category">
+                <h2>Corte e Estilo</h3>
+                    <ul>
+                        <li>Corte Feminino</li>
+                        <li>Corte Masculino</li>
+                        <li>Penteados</li>
+                        <li>Escovação</li>
+                    </ul>
+            </div>
+            <div class="service-category">
+                <h2>Coloração</h3>
+                    <ul>
+                        <li>Tintura</li>
+                        <li>Mechas</li>
+                        <li>Ombre Hair</li>
+                    </ul>
+            </div>
+
+            <div class="service-category">
+                <h2>Tratamentos Capilares</h3>
+                    <ul>
+                        <li>Hidratação Profunda</li>
+                        <li>Reconstrução Capilar</li>
+                    </ul>
+            </div>
+
+            <div class="service-prices">
+                <div class="service-price"></div>
+                    <h2>Preços</h2>
+                    <table>
+                        <tr>
+                            <th>Serviço</th>
+                            <th>Duração</th>
+                            <th>Preço</th>
+                        </tr>
+                        <tr>
+                            <td>Corte Feminino</td>
+                            <td>1h</td>
+                            <td>R$ 80,00</td>
+                        </tr>
+                        <tr>
+                            <td>Tintura</td>
+                            <td>2h</td>
+                            <td>R$ 120,00</td>
+                        </tr>
+                    <!-- Adicione mais linhas conforme necessário -->
+                    </table>
+                </div>
+            </div>
+        </section>     
+
+        <section>
+
+            <div class="booking">
+
+                <h2>Agende Seu Serviço</h2>
+
+                <form action="#">
+                    <label for="selectedService">Escolha o Serviço:</label>
+                    <select id="selectedService" name="selectedService">
+
+                        <option value="corteFeminino">Corte Feminino</option>
+                        <option value="tintura">Tintura</option>
+                        <!-- Adicione mais opções conforme necessário -->
+                    </select>
+
+                    <label for="appointmentDate">Data do Agendamento:</label>
+                    <input type="date" id="appointmentDate" name="appointmentDate" required>
+                    <label for="appointmentTime">Horário do Agendamento:</label>
+                    <input type="time" id="appointmentTime" name="appointmentTime" required>
+                    <button type="submit">Agendar</button>
+                </form>
+            </div>
+        </section>
+        <section>
+            <div class="gallery-section">
+
+                <div class="gallery-item">       
+                    <h2>Transformação de Visual</h2>
+                    <img src="img/professional-girl-hairdresser-makes-client-haircut-girl-is-sitting-mask-beauty-salon.jpg" alt="Exemplo de trabalho 1">
+                    
+                </div>
+                <div class="gallery-item">
+
+                    <h2>Corte Moderno</h2>
+                    <img src="img/fashion-portrait-young-beautiful-woman-with-hairstyle-bob-black-makeup-eye_186202-8441.jpg" alt="Exemplo de trabalho 2">
+                    
+                </div>
+                <div class="gallery-item">
+
+                    <h2>Coloração Vibrante</h2>
+                    <img src="img/cabelo-tingido-fem.jpg" alt="Exemplo de trabalho 3">
+                    
+                </div>
+            </div>
+        </section>
+        <section class="secao4" id="sobre">
+            <div class="secao4-div">
+                <!-- Card 1 -->
+                <div class="secao4-div-card">
+                    <img decoding="async" src="img/beautiful-young-woman-with-long-hair-portrait-amazing-girl-with-style-fashion-makeup_186202-7457.jpg" alt="imagem do card 1 html e css">
+                    <h3>Beleza Plena</h3>
+                    <p>seja qual for o seu estilo, nos do Salão Beleza Plena, estamos aqui para te ajudar nessa transformação.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="secao4-div-card">
+                    <img decoding="async" src="img/fashion-portrait-young-beautiful-woman-with-hairstyle-bob-black-makeup-eye_186202-8441.jpg" alt="imagem do card 2 html e css">
+                    <h3>Beleza plena</h3>
+                    <p>Descrição do card 2.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="secao4-div-card">
+                    <img decoding="async" src="img/modelo-homem.jpg" alt="imagem do card 3 html e css">
+                    <h3>Beleza plena</h3>
+                    <p>Descrição do card 3.</p>
+                </div>
+            </div>
+        </section>
+    <footer>
+    
+        <img class="logo-radape" src="/img/LOGO MELHORADO PNG.png" alt="Logo Beleza Plena">
+        <p class="footer">&copy; 2023-2024 Salão Beleza Plena. Todos os direitos reservados.</p>
+
+    </footer>       
+                    
 </body>
-
-<!--------Início da div btn-whatshapp-------->
-<div class="btn-whatsapp">
-    <a href="https://api.whatsapp.com/send?phone=5571991000422&text=Ol%C3%A1%20tudo%20bem?" id="figura-whatsapp"><img
-    src="img/zap2.png" id="figura-whatsapp" alt="btn-whatsapp"></a>
-
-</div>
-<!---------Fim da div btn-whatshapp------>
-
-<footer>
-
-
-    <p class="footer">&copy; 2023-2024 Salão Beleza Plena. Todos os direitos reservados.</p>
-</footer>
-
-    <img class="logo-radape" src="/img/LOGO MELHORADO PNG.png" alt="Logo Beleza Plena">
-
-</div><!---------Fim do container------->
-
-</body>
-
-</html> 
+</html>
