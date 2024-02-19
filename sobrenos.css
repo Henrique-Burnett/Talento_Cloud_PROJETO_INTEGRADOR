@@ -1,0 +1,136 @@
+/* Reset de estilos para garantir consistência em diferentes navegadores */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3ecec; /* Rosa claro */
+    color: #000000; /* Preto */
+}
+
+header {
+    background-color: #000000; /* Preto */
+    color: #ffffff; /* Branco */
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ab905e; /* Marrom */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+nav ul li {
+    padding: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Branco */
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li:hover {
+    background-color: #f3b655; /* Amarelo */
+}
+
+nav ul li a:hover {
+    color: #000000; /* Preto */
+}
+
+main {
+    max-width: 90%;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #ffffff; /* Branco */
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#salao {
+    width: 100%;
+    height: auto;
+    margin: 2em 0;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #000000; /* Preto */
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 18px;
+    margin-bottom: 1.5em;
+}
+
+.highlight {
+    color: #f3b655; /* Amarelo */
+    font-weight: bold;
+}
+
+footer {
+    background-color: #000000; /* Preto */
+    color: #ffffff; /* Branco */
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+footer img {
+    filter: brightness(0); /* Para tornar a imagem branca */
+}
+
+/* Adicionando responsividade */
+@media only screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 0.5em;
+    }
+
+    main {
+        padding: 1em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
