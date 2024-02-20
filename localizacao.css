@@ -10,6 +10,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #a68d76;
+  overflow-x: hidden;
 }
 
 header {
@@ -158,7 +159,7 @@ footer p {
 
 .logo-radape {
   position: absolute;
-  top: 156rem;
+  top: 155.5rem;
   width: 120px;
   left: 50%;
   transform: translate(-50%);
@@ -184,28 +185,6 @@ footer p {
    
     }
 
-/* 
-#nav-rodape ul li a {
-  display: block;
-  padding: 22px;
-  } */
-
-
-
-
-/* #nav-rodape  {
-  position: relative;
-  display: block;
-  width: 40px;
-  left: 48%;
-}
-
-#nav-rodape ul li a {
-  margin-top: 16rem;
-  margin-left: 20px;
-} */
-
-
 .redes-sociais {
   position: relative;
   display: block;
@@ -229,16 +208,15 @@ hr {
 /*----Início do Formulário----*/
 form {
   position: absolute;
-  top: 62%;
+  top: 63%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
-  width: 380px;
-  height: 450px;
+  width: 350px;
   background-color: lightgray;
   border-radius: 12px;
-  padding: 4rem 40px;
+  padding: 1.5rem 40px;
   padding-top: 0px;
   opacity: 0;
   transition: opacity 1s;
@@ -253,10 +231,9 @@ form h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 35px;
   color: #000000;
-  margin: 10px;
-  padding: 15px;
+  margin: 2px;
+  padding: 25px;
   margin-bottom: 2px;
-  top: 5px;
 }
 
 form label {
@@ -276,6 +253,7 @@ form input {
   display: none;
   font-size: 0.8rem;
   color: darkred;
+  margin-bottom: -5px;
 }
 
 form button {
@@ -283,9 +261,37 @@ form button {
   height: 40px;
   margin-top: 1.5rem;
   font-size: 1rem;
-  align-self: center;
-  margin-top: 40px;
+  border-radius: 10px;
+  margin-left: 15%;
+  background: rgb(212, 205, 205);
 }
+.voltar {
+  width: 100px;
+  height: 40px;
+  margin-top: -2.5rem;
+  margin-left: 60%;
+  font-size: 1rem;
+  border-radius: 10px;
+  background: rgb(212, 205, 205);
+  
+}
+
+.voltar:hover {
+  color: rgba(128, 128, 128, 0.508);
+}
+.enviar{
+  width: 100px;
+  height: 40px;
+  top: 20.5rem;
+  margin-left: 6%;
+  font-size: 1rem;
+  border-radius: 10px;
+  background: rgb(212, 205, 205);
+}
+.enviar:hover {
+  color: rgba(128, 128, 128, 0.508);
+}
+
 
 /* ---------- Estilos dinâmicos ---------- */
 .required-popup::after {
@@ -317,17 +323,7 @@ form input.correct {
   display: block;
 }
 
-.btn-agendar {
-  position: absolute;
-  width: 100px;
-  top: 79.8%;
-  left: 20%;
-  height: 35px;
-  margin-top: 1.5rem;
-  font-size: 1rem;
-  border-radius: 10px;
-  background: rgb(212, 205, 205);
-}
+
 .img-agendar {
   position: absolute;
   width: 63px;
@@ -349,29 +345,14 @@ form input.correct {
   text-transform: uppercase;
 }
 
-
-
-
 .btn-agendar:hover {
   color: rgba(128, 128, 128, 0.508);
 }
-.voltar {
-  position: absolute;
-  top: 76%;
-  left: 55%;
-  height: 35px;
-  font-size: 1rem;
-  border-radius: 10px;
-  background: rgb(212, 205, 205);
-}
-.voltar:hover {
-  color: rgba(128, 128, 128, 0.508);
-}
+
 
 .hidden {
   display: none;
 }
-
 
 /*----Fim do Formulário----*/
 
@@ -382,7 +363,7 @@ form input.correct {
   /*Pequenas telas de celular até 600px / Celular de 600px até 768px*/
 
   header {
-    width: 730px;
+    width: 768px;
     height: 7rem;
   }
   header .logo {
@@ -451,7 +432,7 @@ hr{
   position: relative;
   display: flex;
  top: 10rem;
-  left: 50%;
+  left: 45%;
   
    
 }
