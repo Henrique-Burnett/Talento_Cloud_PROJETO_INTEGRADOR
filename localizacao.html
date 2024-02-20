@@ -1,97 +1,158 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="localizacao.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beleza Plena</title>
-</head>
-<body>
-    <header class="background-logo">
-        <img src="./img/LOGO MELHORADO PNG.png" class="logo" alt="logotipo do salão Beleza Plena" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="localizacao.css" />
+    <script src="localizacao.js" defer></script>
+  </head>
+  <div id="corpo"> <!----Início div corpo---->
+  <body>
 
-        <div class="container"> 
-         
-    <div id="menu"><!--Início do menu-->
-        <ul id="navegacao">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./sobre_nos.html">Sobre nós</a></li>
-            <li><a href="./servicos.html">Serviços</a></li>
-            <li><a href="./agendamento.html">Contato</a></li>
-            <li><a href="./localizacao.html">Localização</a></li>
+    <header>
+      <img src="img/LOGO MELHORADO PNG.png" class="logo" alt="logo" />
+    </header>
+
+    <!--Início da navegação-->
+    <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()"
+      >menu</i
+    >
+    <nav id="itens">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">Sobre nós</a></li>
+        <li><a href="">Serviços</a></li>
+        <li><a href="">Contato</a></li>
+        <li><a href="">Localização</a></li>
+      </ul>
+    </nav>
+    <!--Fim da navegação-->
+
+<!--Início da section -->
+    <section id="localizacao">
+        
+            <article>
+            <h1>Ficaremos felizes em recebê-lo em uma de nossas unidades.
+                <br>
+                 Encontre o endereço mais próximo aqui.</h1>
+                </article>
+
+                <article>
+            <h2>São Paulo</h2>
+
+          </article>
+          <article>
+            <h3>Endereço: Alameda Santos, 1189 - Cerqueira César, São Paulo - SP</h3>
+            <!-- <p>Telefone: 2223-7000</p> -->
+          </article>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0897417821093!2d-46.65683502503036!3d-23.565220178797226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c63aebbdfb%3A0x80520064e9d4004e!2sAlameda%20Santos%2C%201189%20-%20Jardim%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001419-002!5e0!3m2!1spt-BR!2sbr!4v1702571752114!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+        
+        
+           <article>
+            <h2>Rio de Janeiro</h2>
+          </article>
+          <article>
+            <h3>Endereço: Campo de São Cristóvão, 87 - São Cristóvão, Rio de Janeiro - RJ</h3>
+            <!-- <p>Telefone: 2223-7001</p> -->
+          </article>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d649.7216094835957!2d-43.22004402555165!3d-22.899334228943754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997efc0944a51f%3A0x7819a5fb368b08cd!2sCa%C3%A7ula%20S%C3%A3o%20Crist%C3%B3v%C3%A3o%20-%20Papelaria%2C%20Bazar%2C%20Artesanato%20e%20Tecidos%20em%20Rio%20de%20Janeiro!5e0!3m2!1spt-BR!2sbr!4v1706637070123!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+    
+        <article>
+            <h2>Belo Horizonte</h2>
+          </article>
+          <article>
+            <h3>Endereço: Av. Abílio Machado, 810 - Incofindência, Belo Horizonte - MG</h3>
+            <!-- <p>Telefone: 2223-7002</p> -->
+          </article>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2230.5746114462336!2d-43.99891099858218!3d-19.909043749566425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa696c1ab9f8641%3A0xec4b9b0408e27a7!2sCorreios!5e0!3m2!1spt-BR!2sbr!4v1706637300813!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+        
+    
+    </section>
+    <!--Fim da section -->
+
+ <!--------Início da section btn-whatshapp-------->
+ <section class="btn-whatsapp">
+    <a
+      href="https://api.whatsapp.com/send?phone=5571991000422&text=Ol%C3%A1%20tudo%20bem?"
+      id="figura-whatsapp"
+      ><img
+        src="img/btn_whatsapp_2.png"
+        id="figura-whatsapp"
+        alt="btn-whatsapp"
+    /></a>
+  </section>
+  <!---------Fim da section btn-whatshapp------>
+
+  
+  <!--------Início botão Agendamento----->
+<button class="btn3" onclick="abrir()"><img class="img-agendar" src="img/btn_agendar_2.png"  alt="">Agendar</button> 
+  <!--------Fim botão Agendamento------>
+
+</div> <!----Fim div corpo--->
+
+
+<!--------Início do Formulário-------->
+<form>
+    <button onclick="fechar()" type="button" class="voltar">Voltar</button>
+    <h2>Agendamento</h2>
+
+    <label for="username">*Nome:</label>
+    <input type="text" id="username" name="username" />
+    <p id="username-helper" class="helper-text">Mensagem de ajuda</p>
+
+    <label for="email">*E-mail:</label>
+    <input type="email" id="email" name="email" />
+    <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
+
+    <label for="date">Data do Agendamento:</label>
+    <input type="date" id="date" name="date" />
+    <p id="date-helper" class="helper-text">Mensagem de ajuda</p>
+
+    <label for="time">*Horário do Agendamento:</label>
+    <input type="time" id="time" name="time" />
+    <p id="time-helper" class="helper-text">Mensagem de ajuda</p>
+
+    <button class="btn-agendar" type="submit">Enviar</button>
+   
+  </form>
+  <!--------Fim do Formulário-------->
+
+<!--------Início nav-rodape--------->
+<nav class="nav-rodape">
+        <ul>
+          <li>
+            <a href=""><img class="redes-sociais" src="img/instagram_2.png"  alt=""></a>
+          </li>
+          <li>
+            <a href=""><img class="redes-sociais" src="img/facebook_2.png" alt=""></a>
+          </li>
+          <li>
+            <a href=""><img class="redes-sociais" src="img/sinal-do-twitter_3.png" alt=""></a>
+          </li>
         </ul>
-    </div>
-    
-    <div id="area-menu"><!-------Início da área-menu------->
-
-        <div id="conteudo-menu"><!--Início do conteudo-menu-->
-
-            <div id="menu-locais"><!--Início do menu-locais-->
-
-                
-                <span class="locais">
-                    Rio de Janeiro - São Paulo - Belo Horizonte
-                </span>
-
-            </div> <!----------Fim do menu-locais--------->
-           
-
-        </div>
-    </div><!-----------------------Fim da área menu----------------------->
-
-
-    </header><!-------Fim da header------>
-    <!-- <header>
-        <span></span>
-        <nav>
-            <ul id="navegacao">
-                <li><a href="index.html">Página Inicial</a></li>
-                <li><a href="sobre_nos.html">Sobre nós</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="agendamento.html">Agendar</a></li>
-                <form action="">
-                    <label for="search">Busca: </label>
-                    <input type="text" name="search" id="search" placeholder="O que você procura?">
-                </form>
-            </ul>
-        </nav>
-    </header> -->
-    
-    <main>
-        <section>
-            <h1>Agende já a sua visita</h1>
-        </section>
-        
-<section>
-    <div>
-        <h2>São Paulo</h2>
-        <h3><strong>Endereço: </strong>Alameda Santos, 1189 - Cerqueira César, São Paulo - SP</h3>
-        <p>Telefone: 2223-7000</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0897417821093!2d-46.65683502503036!3d-23.565220178797226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c63aebbdfb%3A0x80520064e9d4004e!2sAlameda%20Santos%2C%201189%20-%20Jardim%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001419-002!5e0!3m2!1spt-BR!2sbr!4v1702571752114!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    
-    <div>
-        <h2>Rio de Janeiro</h2>
-        <h3><strong>Endereço: </strong>Campo de São Cristóvão, 87 - São Cristóvão, Rio de Janeiro - RJ</h3>
-        <p>Telefone: 2223-7001</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d649.7216094835957!2d-43.22004402555165!3d-22.899334228943754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997efc0944a51f%3A0x7819a5fb368b08cd!2sCa%C3%A7ula%20S%C3%A3o%20Crist%C3%B3v%C3%A3o%20-%20Papelaria%2C%20Bazar%2C%20Artesanato%20e%20Tecidos%20em%20Rio%20de%20Janeiro!5e0!3m2!1spt-BR!2sbr!4v1706637070123!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-
-    <div>
-        <h2>Belo Horizonte</h2>
-        <h3><strong>Endereço: </strong>Av. Abílio Machado, 810 - Incofindência, Belo Horizonte - MG</h3>
-        <p>Telefone: 2223-7002</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2230.5746114462336!2d-43.99891099858218!3d-19.909043749566425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa696c1ab9f8641%3A0xec4b9b0408e27a7!2sCorreios!5e0!3m2!1spt-BR!2sbr!4v1706637300813!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p><br><br><br><br><br></p>
-    </div>
-
-</section>
-        
-    </main>
-
-    <footer>
-        <img width="250" src="./img/logo white.jpg" alt="logo Beleza rodapé">
-    <p>&copy; 2023 Beleza Plena. Todos os direitos reservados.</p>
-    </footer>
-</body>
-</html>
+      </nav>
+      <!--------Fim nav-rodape--------->
+  
+      <!--------Início div Footer--------->
+      <div class="rodape">
+        <footer>
+          <p>
+            &copy; 2023-2024 Salão Beleza Plena. Todos os direitos reservados.
+          </p>
+          <img
+            class="logo-radape"
+            src="img/LOGO MELHORADO PNG.png"
+            alt="Beleza Plena"
+          />
+        </footer>
+        <hr/>
+      </div>
+      <!--------Fim div Footer--------->
