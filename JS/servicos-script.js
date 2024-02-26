@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('form').addEventListener('submit', function (event) {
-        // Obtém os valores dos campos
+        
         var selectedService = document.getElementById('selectedService').value;
         var appointmentDate = document.getElementById('appointmentDate').value;
         var appointmentTime = document.getElementById('appointmentTime').value;
@@ -15,6 +15,18 @@ document.addEventListener('DOMContentLoaded', function () {
             event.preventDefault();  // Remova esta linha se quiser que o formulário seja enviado normalmente após a confirmação
         }
     });
+
+        // Primeiro, obtenha todos os campos de entrada
+        var inputs = document.querySelectorAll('input');
+
+        // Em seguida, adicione um ouvinte de eventos 'focus' a cada campo de entrada
+        inputs.forEach(function(input) {
+            input.addEventListener('focus', function() {
+                // Oculte a mensagem de confirmação quando qualquer campo de entrada receber o foco
+                document.getElementById('confirmationMessage').style.display = 'none';
+            });
+        });
+    
 
     // Crie um array de objetos, onde cada objeto representa um serviço
     var services = [
