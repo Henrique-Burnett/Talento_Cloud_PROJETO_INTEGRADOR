@@ -1,0 +1,300 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f3b655;
+  text-align: center;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+  color: #21252b;
+  
+}
+
+header {
+  
+  background-color: #21252b;
+  box-shadow: -2px 5px 10px;
+  width: 100%;
+  height: 190px;
+
+ 
+}
+
+header .logo {
+  position: absolute;
+  width: 260px;
+  height: auto;
+  top: 14%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+nav {
+  position: absolute;
+  top: 15%;
+  right: 0%;
+  display: block; 
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 16px;
+  position: absolute;
+  right: 0%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 100%;
+  margin-top: 20px;
+  font: bold;
+}
+nav ul li a {
+  top: 15%;
+  right: 0%;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #f3b655;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  color: rgba(128, 128, 128, 0.508);
+}
+
+#figura-whatsapp {
+  position: fixed;
+  right: 8px;
+  bottom: 35px;
+  width: 90px;
+}
+
+main {
+  text-align: center;
+  align-items: center;
+}
+
+.secao4 {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  color: #f7f7f1;
+}
+
+.secao4-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.secao4-div-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% / 3 - 60px);
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 2px 2px 16px 0px #43474d;
+  border-radius: 15px;
+  background-color: #f3b655;
+  transition: all 0.5s ease;
+}
+
+.secao4-div-card:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.secao4-div-card img {
+  width: 70%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.secao4-div-card h3 {
+  margin-bottom: 0px;
+}
+
+.secao5-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.secao5-div-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% / 3 - 60px);
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 2px 2px 16px 0px #43474d;
+  border-radius: 15px;
+  background-color: #f3b655;
+  transition: all 0.5s ease;
+}
+
+.secao5-div-card:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.secao5-div-card img {
+  width: 70%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.secao5-div-card h3 {
+  margin-bottom: 0px;
+}
+
+.secao6-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.secao6-div-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% / 3 - 60px);
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 2px 2px 16px 0px #43474d;
+  border-radius: 15px;
+  background-color: #f3b655;
+  transition: all 0.5s ease;
+}
+
+.secao6-div-card:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.secao6-div-card img {
+  width: 70%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.secao6-div-card h3 {
+  margin-bottom: 0px;
+}
+.container {
+  padding-top: 20px;
+  display: flex; /* define o elemento pai como flexível */
+  text-align: center;
+  flex-direction: column; /* define a direção dos elementos filhos como vertical */
+  justify-content: center; /* define o espaçamento entre os elementos filhos como igual */
+  align-items: center; /* define o alinhamento horizontal dos elementos filhos como centralizado */
+  border-radius: 10px;
+}
+
+.service-prices {
+  display: flex;
+  width: 50%; /* define a largura dos elementos filhos como 80% do elemento pai */
+  padding: 20px; /* define o espaçamento interno dos elementos filhos como 10px */
+  border: 1px solid #43474d; /* define a borda dos elementos filhos como 1px sólida preta */
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 30px;
+  box-shadow: 2px 2px 16px 0px #43474d;
+  
+}
+
+.booking form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-top: 1px;
+}
+
+.booking label, .booking input, .booking select, .booking button {
+  margin-bottom: 10px;
+  width: 100%; /* Change width to 100% for responsiveness */
+}
+
+footer p {
+  position: relative;
+  text-align: center;
+  top: 115px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.logo-radape {
+  position: absolute;
+  top: 183rem;
+  width: 120px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.rodape {
+  background-color: #21252b;
+  box-shadow: 15px 0px 0px;
+  height: 140px;
+}
+
+.nav-rodape {
+  position:absolute;
+  display: flex;
+  top: 77rem;
+  right: 67.5rem;
+}
+
+hr {
+  position: absolute;
+  display: block;
+  border-bottom: 0.5px;
+  top: 82rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: 0px;
+  opacity: 0.2;
+  color: #767676;
+}
+
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+  .secao4-div-card, .secao5-div-card, .secao6-div-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+  header img {
+    margin-bottom: 15px;
+  }
+  header li a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  header li a {
+    font-size: 0.75rem;
+  }
+}
