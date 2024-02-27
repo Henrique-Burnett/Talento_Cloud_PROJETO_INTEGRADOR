@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beleza Plena</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <div id="corpo"> <!----Início div corpo---->
+  <body>
+
+    <header>
+      <img src="img/LOGO MELHORADO PNG.png" class="logo" alt="logo" />
+    </header>
+
+    <!--Início da navegação-->
+   <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()"
+      >menu</i
+    >
+    <nav id="itens">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Sobre nós</a></li>
+        <li><a href="">Serviços</a></li>
+        <li><a href="/contato/contato.html">Contato</a></li>
+        <li><a href="">Localização</a></li>
+      </ul>
+    </nav>
+    <!--Fim da navegação-->
+
+    <article>
+      <h1>Salão Beleza Plena - Mais que uma experiência!</h1>
+      <p>
+        Requinte, luxo, sofisticação e modernidade. Foi nisso que pensamos ao
+        criar o Salão de Beleza Plena - Uma estética completa que oferece o que
+        há de melhor na área, pensando em tudo que os nossos clientes esperam e
+        merecem.
+      </p>
+    </article>
+
+    <!-----------------Início main slide show--------------------->
+    <main>
+      <div class="slides">
+        <input class="input" type="radio" name="slide" id="slide1" checked />
+        <input class="input" type="radio" name="slide" id="slide2" />
+        <input class="input" type="radio" name="slide" id="slide3" />
+        <input class="input" type="radio" name="slide" id="slide4" />
+        <input class="input" type="radio" name="slide" id="slide5" />
+
+        <div class="slide s1">
+          <img src="img/img_1.jpg" alt="imagem 1" />
+        </div>
+        <div class="slide">
+          <img src="img/img_2.jpg" alt="imagem 2" />
+        </div>
+        <div class="slide">
+          <img src="img/img_3.jpg" alt="imagem 3" />
+        </div>
+        <div class="slide">
+          <img src="img/img_4.jpg" alt="imagem 4" />
+        </div>
+        <div class="slide">
+          <img src="img/img_5.jpg" alt="imagem 5" />
+        </div>
+      </div>
+    </main>
+    <!-----------Fim da main slide show--------->
+    <!----Início da navigation---->
+    <section class="navigation">
+      <label class="bar" for="slide1"></label>
+      <label class="bar" for="slide2"></label>
+      <label class="bar" for="slide3"></label>
+      <label class="bar" for="slide4"></label>
+      <label class="bar" for="slide5"></label>
+    </section>
+    <!----Fim da navigation---->
+
+    <!--------Início da section btn-whatshapp-------->
+    <section class="btn-whatsapp">
+      <a
+        href="https://api.whatsapp.com/send?phone=5571991000422&text=Ol%C3%A1%20tudo%20bem?"
+        id="figura-whatsapp"
+        ><img
+          src="img/btn_whatsapp_2.png"
+          id="figura-whatsapp"
+          alt="btn-whatsapp"
+      /></a>
+    </section>
+    <!---------Fim da section btn-whatshapp------>
+
+    
+    <!--------Início botão Agendamento----->
+  <button class="btn3" onclick="abrir()"><img class="img-agendar" src="img/btn_agendar_2.png"  alt="">Agendar</button> 
+    <!--------Fim botão Agendamento------>
+
+
+  </div> <!----Fim div corpo--->
+
+  <!--------Início do Formulário-------->
+    <form>
+   
+      <h2>Agendamento</h2>
+
+      <label for="username">*Nome:</label>
+      <input type="text" id="username" name="username" />
+      <p id="username-helper" class="helper-text">Mensagem de ajuda</p>
+
+      <label for="email">*E-mail:</label>
+      <input type="email" id="email" name="email" />
+      <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
+
+      <label for="date">Data do Agendamento:</label>
+      <input type="date" id="date" name="date" />
+      <p id="date-helper" class="helper-text">Mensagem de ajuda</p>
+
+      <label for="time">*Horário do Agendamento:</label>
+      <input type="time" id="time" name="time" />
+      <p id="time-helper" class="helper-text">Mensagem de ajuda</p>
+
+      <button type="submit" class="enviar" >Enviar</button>
+      <button onclick="fechar()" type="button" class="voltar">Voltar</button>
+    </form>
+    <!--------Fim do Formulário-------->
+
+    <!--------Fim botão Agendamento-->
+    <!-- <button class="agendar" onclick="toggleForm()">Agendamento</button> -->
+    
+    <!-- <img class="img-agendar" src="img/btn_agendar_2.png"  alt="agendar"> -->
+    
+    <!--------Fim botão Agendamento--------->
+
+    <!--------Início nav-rodape--------->
+    <nav class="nav-rodape">
+      <ul>
+        <li>
+          <a href=""><img class="redes-sociais" src="img/instagram_2.png"  alt=""></a>
+        </li>
+        <li>
+          <a href=""><img class="redes-sociais" src="img/facebook_2.png" alt=""></a>
+        </li>
+        <li>
+          <a href=""><img class="redes-sociais" src="img/sinal-do-twitter_3.png" alt=""></a>
+        </li>
+      </ul>
+    </nav>
+    <!--------Fim nav-rodape--------->
+
+    <!--------Início div Footer--------->
+    <div class="rodape">
+      <footer>
+        <p>
+          &copy; 2023-2024 Salão Beleza Plena. Todos os direitos reservados.
+        </p>
+        <img
+          class="logo-radape"
+          src="img/LOGO MELHORADO PNG.png"
+          alt="Beleza Plena"
+        />
+      </footer>
+    </div>
+    <!--------Fim div Footer--------->
+    <hr />
+  
+  </body>
+
+  
+</html>
