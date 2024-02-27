@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+
+    height: 100vh;
+    background-color: #a68d76;
+    overflow-x: hidden;
+
+}
+
+header {
+    background-color: #21252b;
+    box-shadow: -2px 5px 10px;
+    width: 1519px;
+    height: 190px;
+
+
+}
+
+
+header .logo {
+    position: absolute;
+    width: 260px;
+    height: auto;
+    top: 14%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+nav {
+    position: absolute;
+    top: 15%;
+    right: 0%;
+    display: block;
+    /*display: none;*/
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 16px;
+    position: absolute;
+    right: 0%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+    font: bold;
+}
+
+nav ul li a {
+    top: 15%;
+    right: 0%;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #f3b655;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: rgba(128, 128, 128, 0.508);
+}
+
+#burguer {
+    /* background-color: rgb(48, 48, 48); */
+    display: none;
+    color: #fff;
+    /* padding: 10px; */
+    cursor: pointer;
+    position: absolute;
+    top: 15%;
+    right: 3%;
+    font-size: 40px;
+}
+
+#burguer:hover {
+    color: #000000;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px auto;
+    background: #f0f2f4;
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+    padding: 1.5rem 40px;
+    position: absolute;
+    top: 25rem;
+    left: 60%;
+
+
+}
+
+form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+label {
+    margin-bottom: .2rem;
+    position: relative;
+}
+
+label:not(:first-of-type) {
+    margin-top: 1rem;
+}
+
+input {
+    padding: .2rem .5rem;
+}
+
+.helper-text {
+    display: none;
+    font-size: .8rem;
+    color: darkred;
+    /* text-align: left; */
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    align-self: center;
+    background: #767676;
+    color: white;
+    border: none;
+    border-radius: 4px;
+
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* ----------Início Estilos dinâmicos ---------- */
+.required-popup::after {
+    content: "*Campo obrigatório";
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #DFDFDF;
+    font-size: .65rem;
+    padding: .2rem .3rem;
+    width: auto;
+    display: block;
+    background-color: #202020;
+}
+
+input.error {
+    border: solid 2px #992020;
+    background-color: #CCBBBB;
+    color: #662020;
+}
+
+input.correct {
+    background-color: #BBCCBB;
+    border: solid 2px #206620;
+    color: #206620;
+}
+
+.visible {
+    display: block;
+    /* margin-top: -10px; */
+
+}
+
+/* ----------Fim Estilos dinâmicos ---------- */
+
+
+article {
+
+    position: absolute;
+    margin-top: 12rem;
+    left: 15%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 45px;
+
+}
+
+
+.contact {
+    position: relative;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 0;
+    margin: 20px 0 0 0;
+    font-size: 25px;
+
+}
+
+div.tel {
+    position: absolute;
+    margin-top: 40rem;
+    left: 17%;
+    background: rgb(245, 245, 245);
+    width: 30%;
+    height: 150px;
+    border: 4px solid #4f5c71;
+    border-style: double;
+}
+
+h2 {
+    position: relative;
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+hr {
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+}
+
+div p {
+    position: relative;
+    margin: 5px;
+    font-size: 18px;
+    word-wrap: break-word;
+    padding: 15px 10px 0 5px;
+    text-align: center;
+}
+
+
+div.email {
+    position: absolute;
+    margin-top: 40rem;
+    left: 55%;
+    background: rgb(245, 245, 245);
+    width: 30%;
+    height: 150px;
+    border: 4px solid #4f5c71;
+    border-style: double;
+}
+
+
+
+#caixa {
+    position: static;
+    background: rgb(245, 245, 245);
+    width: 1200px;
+    height: 530px;
+    margin-top: 10rem;
+    margin-left: 11%;
+    border: 4px solid #4f5c71;
+    border-style: double;
+
+}
+
+#figura-whatsapp {
+    position: fixed;
+    right: 16px;
+    bottom: 33px;
+    width: 90px;
+}
+
+footer p {
+    position: relative;
+    text-align: center;
+    top: 105px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.logo-radape {
+    position: absolute;
+    top: 87rem;
+    width: 120px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.rodape {
+    background-color: #21252b;
+    box-shadow: 15px 0px 0px;
+    height: 140px;
+    margin-top: 31rem;
+}
+
+.nav-rodape {
+    position: relative;
+    top: 32.5rem;
+    right: 67rem;
+}
+
+.nav-rodape a {
+    margin-top: -15px;
+    margin-left: 20px;
+
+}
+
+.redes-sociais {
+    position: relative;
+    display: block;
+    width: 40px;
+    left: -180px;
+
+}
+
+.linha {
+    position: absolute;
+    display: block;
+    border-bottom: 0.5px;
+    top: 93rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    height: 0px;
+    opacity: 0.2;
+    color: #767676;
+}
