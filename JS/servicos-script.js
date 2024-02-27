@@ -68,15 +68,15 @@ document.addEventListener('DOMContentLoaded', function () {
         const cardsContainerMulheres = document.getElementById('cardsContainerMulheres');
 
         const servicosMulheres = [
-            { title: 'CORTE', image: './img/corte-feminino.jpg',alt: 'profissional realizando corte de cabelo em cliente', description: 'Seja qual for o seu estilo, nossa equipe está sempre preparada para te atender!' },
-            { title:'ESCOVA', image: './img/escovação.jpg', alt: 'profissional escovando cabelo de uma cliente.', description: 'Transforme seu dia com um cabelo liso e brilhante.'},
-            { title:'COLORAÇÃO', image: './img/coloração.jpg', alt: 'profissional colorindo os cabelos de cliente', description: 'Expresse sua personalidade com uma nova cor de cabelo.'},
-            { title:'MECHAS', image: './img/mechas.jpg', alt: 'imagem de mulheres com cabelos com mechas', description: 'Ilumine seu visual com mechas deslumbrantes.'},
-            { title:'TRATAMENTO CAPILAR', image: './img/trat-cap-fem.jpg', alt: 'profissional realizando tretamento capilar em cliente.', description: 'Revitalize seus cabelos com nossos tratamentos nutritivos.'},
-            { title:'PENTEADOS', image: './img/penteados.jpg', alt: 'profissional fazendo um lindo penteado em uma cliente.', description: 'Deixe-nos criar o penteado perfeito para qualquer ocasião.'},
-            { title:'MANICURE/PEDICURE', image: './img/manic-pedic.jpg', alt: 'imagem de unhas dos pes e mãos com esmalte.', description: 'Relaxe enquanto transformamos suas unhas em uma obra de arte.'},
-            { title:'MAQUIAGEM', image: './img/maquiagem1.webp', alt: 'imagem de mulher maquiada.', description: 'Realce sua beleza natural com nossa maquiagem profissional.'},
-            { title:'ALONGAMENTO DE CÍLIOS', image: './img/alongam-de-cilios.jpg', alt: 'imagem contendo demonstração de alongamento de cílios sendo realizado.', description: 'Destaque seus olhos com cílios longos e volumosos.'},
+            { title: 'CORTE', image: './img/img-servicos/corte-feminino.jpg',alt: 'profissional realizando corte de cabelo em cliente', description: 'Seja qual for o seu estilo, nossa equipe está sempre preparada para te atender!' },
+            { title:'ESCOVA', image: './img/img-servicos/escovação.jpg', alt: 'profissional escovando cabelo de uma cliente.', description: 'Transforme seu dia com um cabelo liso e brilhante.'},
+            { title:'COLORAÇÃO', image: './img/img-servicos/coloração.jpg', alt: 'profissional colorindo os cabelos de cliente', description: 'Expresse sua personalidade com uma nova cor de cabelo.'},
+            { title:'MECHAS', image: './img/img-servicos/mechas.jpg', alt: 'imagem de mulheres com cabelos com mechas', description: 'Ilumine seu visual com mechas deslumbrantes.'},
+            { title:'TRATAMENTO CAPILAR', image: './img/img-servicos/trat-cap-fem.jpg', alt: 'profissional realizando tretamento capilar em cliente.', description: 'Revitalize seus cabelos com nossos tratamentos nutritivos.'},
+            { title:'PENTEADOS', image: './img/img-servicos/penteados.jpg', alt: 'profissional fazendo um lindo penteado em uma cliente.', description: 'Deixe-nos criar o penteado perfeito para qualquer ocasião.'},
+            { title:'MANICURE/PEDICURE', image: './img/img-servicos/manic-pedic.jpg', alt: 'imagem de unhas dos pes e mãos com esmalte.', description: 'Relaxe enquanto transformamos suas unhas em uma obra de arte.'},
+            { title:'MAQUIAGEM', image: './img/img-servicos/maquiagem1.webp', alt: 'imagem de mulher maquiada.', description: 'Realce sua beleza natural com nossa maquiagem profissional.'},
+            { title:'ALONGAMENTO DE CÍLIOS', image: './img/img-servicos/alongam-de-cilios.jpg', alt: 'imagem contendo demonstração de alongamento de cílios sendo realizado.', description: 'Destaque seus olhos com cílios longos e volumosos.'},
             // Adicione mais serviços conforme necessário
         ];
 
@@ -99,12 +99,12 @@ document.addEventListener('DOMContentLoaded', function () {
         const cardsContainerHomens = document.getElementById('cardsContainerHomens');
 
         const servicosHomens = [
-            { title: 'CORTE', image: './img/corte-cabelo-homem.jpg', alt:'imagem de um cabelereiro cortando o cabelo de um cliente.', description: 'Estilo e precisão em cada corte.' },
-            { title: 'ESCOVA', image: './img/escova-homem.jpg', alt:'imagem mostra o cabelereiro escovando os cabelos de um cliente.', description:'Alinhe seu estilo com uma escova perfeita.'},
-            { title: 'SKINCARE', image: './img/skincare masculina.jpg', alt:'profissional realizando skincare em cliente', description:'Cuidado e proteção para a pele masculina.'},
-            { title: 'BARBEARIA', image: './img/handsome-man-cutting-beard-barber-salon_1303-20972.jpg', alt:'profissional em barbearia fazendo a barba de um cliente', description:'Transforme sua barba em um símbolo de estilo.'},
-            { title: 'FOTODEPILAÇÃO', image: './img/doctor-performing-laser-hair-removal-male-patient-skin.jpg', alt:'profissional realizando procedimento para remoção de pelos com fototerapia em um cliente.', description:'Tecnologia a serviço de uma pele mais lisa'},
-            { title: 'ESTUDIO DE TATOO', image: './img/master-doing-tattoo-with-iron-salon.jpg', alt:'profissional fazendo tatuagem em braço de cliente.', description:'Expresse sua individualidade com nossas tatuagens personalizadas.'},
+            { title: 'CORTE', image: './img/img-servicos/corte-cabelo-homem.jpg', alt:'imagem de um cabelereiro cortando o cabelo de um cliente.', description: 'Estilo e precisão em cada corte.' },
+            { title: 'ESCOVA', image: './img/img-servicos/escova-homem.jpg', alt:'imagem mostra o cabelereiro escovando os cabelos de um cliente.', description:'Alinhe seu estilo com uma escova perfeita.'},
+            { title: 'SKINCARE', image: './img/img-servicos/skincare masculina.jpg', alt:'profissional realizando skincare em cliente', description:'Cuidado e proteção para a pele masculina.'},
+            { title: 'BARBEARIA', image: './img/img-servicos/handsome-man-cutting-beard-barber-salon_1303-20972.jpg', alt:'profissional em barbearia fazendo a barba de um cliente', description:'Transforme sua barba em um símbolo de estilo.'},
+            { title: 'FOTODEPILAÇÃO', image: './img/img-servicos/doctor-performing-laser-hair-removal-male-patient-skin.jpg', alt:'profissional realizando procedimento para remoção de pelos com fototerapia em um cliente.', description:'Tecnologia a serviço de uma pele mais lisa'},
+            { title: 'ESTUDIO DE TATOO', image: './img/img-servicos/master-doing-tattoo-with-iron-salon.jpg', alt:'profissional fazendo tatuagem em braço de cliente.', description:'Expresse sua individualidade com nossas tatuagens personalizadas.'},
             // Adicione mais serviços conforme necessário
         ];
 
@@ -127,12 +127,12 @@ document.addEventListener('DOMContentLoaded', function () {
         const cardsContainerTodos = document.getElementById('cardsContainerTodos');
 
         const servicosTodos = [
-            { title: 'PODOLOGIA', image: './img/podologia.jpg',alt:'profissional podologo realizando cuidados em pes de cliente.', description: 'Cuidado especializado para seus pés' },
-            { title: 'DEPILAÇÃO A LASER', image: './img/laser-epilation-hair-removal-therapy_1303-23661.jpg',alt:'imagem mostra como é feita a remoção de pelos corporais à laser', description: 'Tecnologia avançada para uma pele suave e sem pelos.' },
-            { title: 'DESIGN DE SOMBRANCELHAS', image: './img/design-de-sombrancelhas.jpg',alt:'imagem mostra como é feito o design de sombrancelhas', description: 'Realce seu olhar com sobrancelhas perfeitamente desenhadas.' },
-            { title: 'ESTÉTICA FACIAL', image: './img/trat-facial.jpg',alt:'imagem de profissional realizando tratamento facial em cliente.', description: 'Tratamentos personalizados para realçar sua beleza natural.' },
-            { title: 'MASSAGEM TERAPÊUTICA', image: './img/massagem-terapêutica.jpg',alt:'imagem de profissional realizando massagem teraêutica em cliente.', description: 'Alivie o estresse e relaxe com nossas massagens terapêuticas.' },
-            { title: 'SPA DAY', image: './img/spa-day.jpg',alt:'imagem de mulher em um ambiente de spa, relaxando', description: 'Um dia de mimos e relaxamento esperam por você.' },
+            { title: 'PODOLOGIA', image: './img/img-servicos/podologia.jpg',alt:'profissional podologo realizando cuidados em pes de cliente.', description: 'Cuidado especializado para seus pés' },
+            { title: 'DEPILAÇÃO A LASER', image: './img/img-servicos/laser-epilation-hair-removal-therapy_1303-23661.jpg',alt:'imagem mostra como é feita a remoção de pelos corporais à laser', description: 'Tecnologia avançada para uma pele suave e sem pelos.' },
+            { title: 'DESIGN DE SOMBRANCELHAS', image: './img/img-servicos/design-de-sombrancelhas.jpg',alt:'imagem mostra como é feito o design de sombrancelhas', description: 'Realce seu olhar com sobrancelhas perfeitamente desenhadas.' },
+            { title: 'ESTÉTICA FACIAL', image: './img/img-servicos/trat-facial.jpg',alt:'imagem de profissional realizando tratamento facial em cliente.', description: 'Tratamentos personalizados para realçar sua beleza natural.' },
+            { title: 'MASSAGEM TERAPÊUTICA', image: './img/img-servicos/massagem-terapêutica.jpg',alt:'imagem de profissional realizando massagem teraêutica em cliente.', description: 'Alivie o estresse e relaxe com nossas massagens terapêuticas.' },
+            { title: 'SPA DAY', image: './img/img-servicos/spa-day.jpg',alt:'imagem de mulher em um ambiente de spa, relaxando', description: 'Um dia de mimos e relaxamento esperam por você.' },
             
             // Adicione mais serviços conforme necessário
         ];
