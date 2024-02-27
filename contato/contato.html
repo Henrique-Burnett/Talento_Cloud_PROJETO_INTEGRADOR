@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novo Contato</title>
+    <link rel="stylesheet" href="contato.css" />
+    <script src="contato.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <img src="img_contato/LOGO MELHORADO PNG.png" class="logo" alt="logo" />
+    </header>
+
+    <!--Início da navegação-->
+    <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()"
+      >menu</i
+    >
+    <nav id="itens">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="">Sobre nós</a></li>
+        <li><a href="">Serviços</a></li>
+        <li><a href="">Contato</a></li>
+        <li><a href="localizacao.html">Localização</a></li>
+      </ul>
+    </nav>
+    <!--Fim da navegação-->
+
+    <article>
+      <h1>Entre em contato conosco</h1>
+      <p class="contact">
+        Deixe aqui a sua sugestão ou dúvida. Sua opinião é muito
+        importante para nós.
+      </p>
+    </article>
+
+    <div id="caixa">
+      <div class="tel">
+        <h2>Telefone</h2>
+        <hr />
+        <p>(11) 9999-8888</p>
+        <p>(11) 9999-7777</p>
+      </div>
+      <div class="email">
+        <h2>E-mail</h2>
+        <hr />
+        <p>salaobelezaplena@gmail.com</p>
+        <p>salaobelezaplena@hotmail.com</p>
+      </div>
+    </div>
+
+    <!------INÍCIO DE FORMULÁRIO----->
+    <form action="">
+      <h2>Formulário de cadastro</h2>
+      <label for="username">*Nome:</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Nome"
+        required
+      />
+      <p id="username-helper" class="helper-text">Mensagem de ajuda</p>
+
+      <label for="email">*E-mail:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="E-mail"
+        required
+      />
+      <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
+
+      <label for="message">*Mensagem:</label>
+      <textarea id="message" placeholder="Sua Mensagem" required></textarea>
+
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+    <!--------FIM DE FORMULÁRIO-------->
+
+    <!--------Início da section btn-whatshapp-------->
+    <section class="btn-whatsapp">
+      <a
+        href="https://api.whatsapp.com/send?phone=5571991000422&text=Ol%C3%A1%20tudo%20bem?"
+        id="figura-whatsapp"
+        ><img
+          src="img_contato/btn_whatsapp_2.png"
+          id="figura-whatsapp"
+          alt="btn-whatsapp"
+      /></a>
+    </section>
+    <!---------Fim da section btn-whatshapp------>
+
+    <!--------Início nav-rodape--------->
+    <nav class="nav-rodape">
+      <ul>
+        <li>
+          <a href=""
+            ><img class="redes-sociais" src="img_contato/instagram_2.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href=""
+            ><img class="redes-sociais" src="img_contato/facebook_2.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href=""
+            ><img class="redes-sociais" src="img_contato/sinal-do-twitter_3.png" alt=""
+          /></a>
+        </li>
+      </ul>
+    </nav>
+    <!--------Fim nav-rodape--------->
+
+    <!--------Início div Footer--------->
+    <div class="rodape">
+      <footer>
+        <p>
+          &copy; 2023-2024 Salão Beleza Plena. Todos os direitos reservados.
+        </p>
+        <img
+          class="logo-radape"
+          src="img_contato/LOGO MELHORADO PNG.png"
+          alt="Beleza Plena"
+        />
+      </footer>
+    </div>
+    <hr class="linha" />
+  </body>
+</html>
