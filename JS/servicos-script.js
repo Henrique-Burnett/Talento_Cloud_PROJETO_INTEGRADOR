@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
             { title:'MANICURE/PEDICURE', image: './img/img-servicos/manic-pedic.jpg', alt: 'imagem de unhas dos pes e mãos com esmalte.', description: 'Relaxe enquanto transformamos suas unhas em uma obra de arte.'},
             { title:'MAQUIAGEM', image: './img/img-servicos/maquiagem1.webp', alt: 'imagem de mulher maquiada.', description: 'Realce sua beleza natural com nossa maquiagem profissional.'},
             { title:'ALONGAMENTO DE CÍLIOS', image: './img/img-servicos/alongam-de-cilios.jpg', alt: 'imagem contendo demonstração de alongamento de cílios sendo realizado.', description: 'Destaque seus olhos com cílios longos e volumosos.'},
-            // Adicione mais serviços conforme necessário
+            
         ];
 
         servicosMulheres.forEach(servico => {
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
             { title: 'BARBEARIA', image: './img/img-servicos/handsome-man-cutting-beard-barber-salon_1303-20972.jpg', alt:'profissional em barbearia fazendo a barba de um cliente', description:'Transforme sua barba em um símbolo de estilo.'},
             { title: 'FOTODEPILAÇÃO', image: './img/img-servicos/doctor-performing-laser-hair-removal-male-patient-skin.jpg', alt:'profissional realizando procedimento para remoção de pelos com fototerapia em um cliente.', description:'Tecnologia a serviço de uma pele mais lisa'},
             { title: 'ESTUDIO DE TATOO', image: './img/img-servicos/master-doing-tattoo-with-iron-salon.jpg', alt:'profissional fazendo tatuagem em braço de cliente.', description:'Expresse sua individualidade com nossas tatuagens personalizadas.'},
-            // Adicione mais serviços conforme necessário
+            
         ];
 
         servicosHomens.forEach(servico => {
@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function () {
             { title: 'MASSAGEM TERAPÊUTICA', image: './img/img-servicos/massagem-terapêutica.jpg',alt:'imagem de profissional realizando massagem teraêutica em cliente.', description: 'Alivie o estresse e relaxe com nossas massagens terapêuticas.' },
             { title: 'SPA DAY', image: './img/img-servicos/spa-day.jpg',alt:'imagem de mulher em um ambiente de spa, relaxando', description: 'Um dia de mimos e relaxamento esperam por você.' },
             
-            // Adicione mais serviços conforme necessário
+            
         ];
 
         servicosTodos.forEach(servico => {
